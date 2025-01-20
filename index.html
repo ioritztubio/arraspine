@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Arraspine</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"
+          >Arraspine <i class="bx bxs-home-alt-2"></i
+        ></a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#bedroom" class="nav__link">
+                <i class="bx bx-hotel"></i>
+                <span>Habitaciones</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-phone"></i>
+                <span>Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="button nav__button"> Reservar </a>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home_data">
+            <h1 class="home__title">
+              Naturaleza, <br />
+              tradición <br />
+            y descanso
+            </h1>
+            <p class="home__description">
+              Encuentra tu refugio ideal en el corazón de la naturaleza.
+              Habitaciones con encanto para desconectar y soñar en Astigarraga.
+            </p>
+
+            <div class="home__value">
+                <div>
+                    <h1 class="home__value-number">
+                       15 <span>Min</span>
+                    </h1>
+                    <span class="home__value-description">
+                        de San Sebastián
+                    </span>
+                </div>
+
+                <div>
+                    <h1 class="home__value-number">
+                       30 <span>+</span>
+                    </h1>
+                    <span class="home__value-description">
+                        Sidrerías <br> Cerca
+                    </span>
+                </div>
+
+                <div>
+                    <h1 class="home__value-number">
+                       5 <span>+</span>
+                    </h1>
+                    <span class="home__value-description">
+                        Rutas de <br> Senderismo
+                    </span>
+                </div>
+            </div>
+          </div>
+
+          <div class="home__images">
+            <div class="home__orbe"></div>
+
+            <div class="home__img">
+              <img src="assets/img/obejas.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== LOGOS ====================-->
+    <!--
+        <section class="logos section">
+          <div class="logos__container container grid">
+            <div class="logos__img">
+                <img src="assets/img/logo1.png" alt="">
+            </div>
+          </div>
+        </section>
+    -->
+
+      <!--==================== BEDROOMS ====================-->
+      <section class="bedroom section" id="bedroom">
+        <div class="container">
+            <span class="section__subtitle">
+                Habitaciones
+            </span>
+            <h2 class="section__title">
+                Descubre nuestras habitaciones
+            </h2>
+
+            <div class="bedroom__container swiper">
+                <div class="swiper-wrapper">
+                    <article class="bedroom__card swiper-slide">
+                        <img src="assets/img/h_2_cama_doble.webp" alt="" class="bedroom__img">
+                        <div class="bedroom__data">
+                            <h2 class="bedroom__price">
+                                45<span>€</span>
+                            </h2>
+                            <h3 class="bedroom__title">
+                                Habitación Nº1
+                            </h3>
+                            <p class="bedroom__description">
+                                Habitación con cama doble, baño privado y vistas al jardín.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bedroom__card swiper-slide">
+                        <img src="assets/img/h_cama_mat_.webp" alt="" class="bedroom__img">
+                        <div class="bedroom__data">
+                            <h2 class="bedroom__price">
+                              60<span>€</span>
+                            </h2>
+                            <h3 class="bedroom__title">
+                                Habitación Nº2
+                            </h3>
+                            <p class="bedroom__description">
+                                Habitación con cama doble, baño privado y vistas al jardín.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bedroom__card swiper-slide">
+                        <img src="assets/img/h_cama_mat_2.webp" alt="" class="bedroom__img">
+                        <div class="bedroom__data">
+                            <h2 class="bedroom__price">
+                              50<span>€</span>
+                            </h2>
+                            <h3 class="bedroom__title">
+                                Habitación Nº3
+                            </h3>
+                            <p class="bedroom__description">
+                                Habitación con cama doble, baño privado y vistas al jardín.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-button-next">
+                  <i class='bx bx-chevron-right' ></i>
+                </div>
+                <div class="swiper-button-prev">
+                  <i class='bx bx-chevron-left' ></i>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--==================== VALUE ====================-->
+      <section class="value section" id="value"></section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact"></section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section"></section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section"></footer>
+
+    <!--========== SCROLL UP ==========-->
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
