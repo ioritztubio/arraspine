@@ -12,6 +12,7 @@
   --first-color-light: hsl(106, 62%, 59%);
   --first-color-lighten: hsl(108, 52%, 94%);
   --second-color: hsl(24, 83%, 53%);
+  --second-color-lighten:hsl(24, 52%, 94%);
   --title-color: hsl(106, 57%, 28%);
   --text-color: hsl(106, 25%, 50%);
   --text-color-light: hsl(106, 12%, 75%);
@@ -210,18 +211,18 @@ button {
   }
 }
 /* Change background header */
-.scroll-header{
+.scroll-header {
   background-color: var(--body-color);
   box-shadow: 0 1px 4px hsla(106, 4%, 15%, 0.15);
 }
 
-.scroll-header .nav__logo{
+.scroll-header .nav__logo {
   color: #131313;
 }
 
-.scroll-header .nav__logo:hover{
+.scroll-header .nav__logo:hover {
   color: hsl(0, 0%, 42%);
-} 
+}
 
 /* Active link */
 
@@ -245,53 +246,55 @@ button {
   color: var(--first-color-lighten);
 }
 
-.home__title{
+.home__title {
   font-size: var(--biggest-font-size);
   line-height: 120%;
   margin-bottom: 1.25rem;
 }
 
-.home__description{
+.home__description {
   color: var(--text-color-light);
   margin-bottom: 2rem;
 }
 
-.home__value{
+.home__value {
   display: flex;
   column-gap: 2.5rem;
 }
 
-.home__value-number{
+.home__value-number {
   font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
 }
 
-.home__value-number span{
+.home__value-number span {
   color: var(--second-color);
 }
 
-.home__value-description{
+.home__value-description {
   display: flex;
   color: var(--text-color-light);
   font-size: var(--smaller-font-size);
 }
 
-.home__images{
+.home__images {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.home__orbe{
+.home__orbe {
   width: 265px;
   height: 284px;
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+    180deg,
     hsl(0, 0%, 16%) 93%,
-    hsl(0, 0%, 70%) 100%);
-    border-radius: 135px 135px 0 0;
+    hsl(0, 0%, 70%) 100%
+  );
+  border-radius: 135px 135px 0 0;
 }
 
-.home__img{
+.home__img {
   position: absolute;
   width: 250px;
   height: 300px;
@@ -303,11 +306,9 @@ button {
   box-shadow: 0 16px 25px hsla(228, 67%, 8%, 0.25);
 }
 /*=============== BUTTON ===============*/
-.button{
+.button {
   display: inline-block;
-  background: linear-gradient(101deg,
-  hsl(106, 57%, 37%),
-  hsl(101, 100%, 20%));
+  background: linear-gradient(101deg, hsl(106, 57%, 37%), hsl(101, 100%, 20%));
   color: var(--body-color);
   padding: 14px 28px;
   border-radius: 0.5rem;
@@ -316,110 +317,109 @@ button {
   box-shadow: 0 4px 8px hsla(228, 67%, 8%, 0.25);
   cursor: pointer;
   transition: 0.3s;
-  
 }
 
-.button:hover{
+.button:hover {
   box-shadow: 0 4px 8px hsla(228, 67%, 8%, 0.25);
 }
 
-.nav__button{
+.nav__button {
   display: none;
 }
 /*=============== LOGOS ===============*/
 
 /*=============== BEDROOM ===============*/
-.bedroom__container{
+.bedroom__container {
   padding: 1rem 0 5rem;
 }
 
-.bedroom__card{
+.bedroom__card {
   width: 310px;
   background-color: var(--container-color);
-  padding: .65rem .65rem 1.5rem;
+  padding: 0.65rem 0.65rem 1.5rem;
+  border: 2px solid var(--border-color);
   border-radius: 1rem;
   margin: 0 auto;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.bedroom__img{
-  border-radius: 1rem;
+.bedroom__img {
+  border-radius: 0.75rem;
   margin-bottom: 1rem;
 }
 
-.bedroom__data{
-  padding: 0 1rem 0 .5rem;
-
+.bedroom__data {
+  padding: 0 1rem 0 0.5rem;
 }
 
-.bedroom__price{
+.bedroom__price {
   font-size: var(--h2-font-size);
   color: var(--text-color);
   margin-bottom: 0.25rem;
 }
 
-.bedroom__price span{
+.bedroom__price span {
   color: var(--second-color);
 }
-.bedroom__title{
+.bedroom__title {
   font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
 }
 
-.bedroom__description{
+.bedroom__description {
   font-size: var(--small-font-size);
 }
 
-.bedroom__card:hover{
+.bedroom__card:hover {
   box-shadow: 0 12px 16px hsla(105, 66%, 18%, 0.15);
 }
 /* Swiper class */
 .swiper-button-prev::after,
-.swiper-button-next::after{
-  content: '';
+.swiper-button-next::after {
+  content: "";
 }
 
 .swiper-button-next,
-.swiper-button-prev{
-  top:initial;
+.swiper-button-prev {
+  top: initial;
   bottom: 0;
   width: initial;
   height: initial;
   background-color: var(--container-color);
   border: 1px solid var(--text-color-light);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 6px;
   font-size: 1.5rem;
   color: var(--first-color);
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.swiper-button-prev{
-  left:calc(50% - 3rem);
+.swiper-button-prev {
+  left: calc(50% - 3rem);
 }
 
-.swiper-button-next{
-  right:calc(50% - 3rem);
+.swiper-button-next {
+  right: calc(50% - 3rem);
 }
 /*=============== VALUE ===============*/
-.value__container{
+.value__container {
   row-gap: 3rem;
 }
 
-.value__images{
+.value__images {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.value__orbe{
+.value__orbe {
   width: 266px;
   height: 316px;
   background-color: hsl(106, 24%, 97%);
   border-radius: 135px 135px 16px 16px;
 }
 
-.value__img{
+.value__img {
   position: absolute;
   width: 250px;
   height: 300px;
@@ -430,72 +430,189 @@ button {
   box-shadow: 0 16px 32px hsla(228, 67%, 25%, 0.25);
 }
 
-.value__description{
+.value__description {
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
 }
 
-.value__accordion{
+.value__accordion {
   display: grid;
   row-gap: 1.5rem;
 }
 
-.value__accordion-item{
+.value__accordion-item {
   background-color: var(--container-color);
   border: 2px solid var(--border-color);
-  border-radius: .5rem;
-  padding: 1rem .75rem;
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
 }
 
-.value__accordion-header{
+.value__accordion-header {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.value__accordion-icon{
+.value__accordion-icon {
   background-color: var(--first-color-lighten);
   padding: 5px;
   border-radius: 0.25rem;
   font-size: 18px;
   color: var(--first-color);
-  margin-right: .75rem;
-  transition: .3s;
+  margin-right: 0.75rem;
+  transition: 0.3s;
 }
 
-.value__accordion-title{
+.value__accordion-title {
   font-size: var(--small-font-size);
-
 }
 
-.value__accordion-arrow{
+.value__accordion-arrow {
   display: flex;
   background-color: var(--first-color-lighten);
-  padding: .25rem;
+  padding: 0.25rem;
   color: var(--first-color);
   border-radius: 2px;
   font-size: 10px;
   margin-left: auto;
+  transition: 0.3s;
+}
+
+.value__accordion-arrow i {
+  transition: 0.4s;
+}
+
+.value__accordion-description {
+  font-size: var(--small-font-size);
+  padding: 1.25rem 2rem 0 2rem;
+}
+
+.value__accordion-content {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.25s ease;
+}
+/*Rotate icon and add shadows*/
+.accordion-open {
+  box-shadow: 0 2px 20px hsla(105, 65%, 18%, 0.048);
+}
+
+.accordion-open .value__accordion-arrow {
+  transform: rotate(180deg);
+}
+/*=============== CONTACT ===============*/
+.contact__container {
+  row-gap: 2rem;
+}
+.contact__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__orbe {
+  width: 266px;
+  height: 316px;
+  background-color: hsl(106, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
+
+.contact__img {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 16px 32px hsla(228, 67%, 25%, 0.25);
+}
+
+.contact__description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2.5rem;
+}
+
+.contact__card{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.25rem .75rem; 
+}
+
+.contact__card-box{
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  padding: 1.25rem .75rem;
+  border-radius: .5rem;
   transition: .3s;
 }
 
-.value__accordion-arrow i{
-  transition: .4s;
+.contact__card-info{
+  display: flex;
+  align-items: flex-start;
+  column-gap: .75rem;
+  margin-bottom: 1.25rem;
 }
 
-.value__accordion-description{
+.contact__card__i{
+  padding: 6px;
+  background-color: var(--first-color-lighten);
+  border-radius: 6px;
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.contact__card-title{
+  font-size: var(--normal-font-size);
+}
+
+.contact__card-description{
   font-size: var(--smaller-font-size);
-  padding: 1.25rem 2.5rem 0 2.75rem;
 }
 
-.value__accordion-content{
-  overflow: hidden;
-  height: 0;
-  transition: all .25 ease;
+.contact__card-button{
+  font-size: var(--small-font-size);
+  padding: 14px 0;
+  width: 100%;
+  border-radius: .25rem;
+  background: var(--first-color-lighten);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  box-shadow: none;
 }
-/*Rotate icon and add shadows*/
 
-/*=============== CONTACT ===============*/
+.contact__card-button:hover{
+  background: var(--first-color);
+  color: var(--body-color);
+}
+
+.contact__card-box:hover{
+  box-shadow: 0 8px 24px hsla(105, 66%, 18%, 0.15);
+}
+
+.booking__card-button{
+  font-size: var(--small-font-size);
+  padding: 14px 0;
+  width: 100%;
+  border-radius: .25rem;
+  background: var(--second-color-lighten);
+  color: var(--second-color);
+  font-weight: var(--font-semi-bold);
+  box-shadow: none;
+}
+
+.booking__card-button:hover{
+  background: var(--second-color);
+  color: var(--body-color);
+}
+
+.booking__i{
+  padding: 6px;
+  background-color: var(--second-color-lighten);
+  border-radius: 6px;
+  font-size: 1.25rem;
+  color: var(--second-color);
+}
 
 /*=============== SUBSCRIBE ===============*/
 
