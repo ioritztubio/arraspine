@@ -16,6 +16,9 @@
   --title-color: hsl(106, 57%, 28%);
   --text-color: hsl(106, 25%, 50%);
   --text-color-light: hsl(106, 12%, 75%);
+  --second-title-color: hsl(24, 57%, 28%);
+  --second-text-color: hsl(24, 28%, 52%);
+  --second-text-color-light: hsl(24, 12%, 75%);
   --border-color: hsl(103, 20%, 93%);
   --body-color: #fff;
   --container-color: #fff;
@@ -629,6 +632,15 @@ button {
   border-radius: 6px;
   font-size: 1.25rem;
   color: var(--second-color);
+}
+
+.booking__card-title{
+  color: var(--second-title-color);
+}
+
+.booking__card-description{
+  color: var(--second-text-color);
+  font-size: var(--smaller-font-size);
 }
 
 /*=============== SUBSCRIBE ===============*/
