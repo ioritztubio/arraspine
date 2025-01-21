@@ -10,12 +10,12 @@
   --first-color: hsl(106, 91%, 34%);
   --first-color-alt: hsl(106, 66%, 47%);
   --first-color-light: hsl(106, 62%, 59%);
-  --first-color-lighten: hsl(106, 100%, 97%);
+  --first-color-lighten: hsl(108, 52%, 94%);
   --second-color: hsl(24, 83%, 53%);
   --title-color: hsl(106, 57%, 28%);
   --text-color: hsl(106, 25%, 50%);
   --text-color-light: hsl(106, 12%, 75%);
-  --border-color: hsl(106, 99%, 98%);
+  --border-color: hsl(103, 20%, 93%);
   --body-color: #fff;
   --container-color: #fff;
 
@@ -391,7 +391,7 @@ button {
   padding: 6px;
   font-size: 1.5rem;
   color: var(--first-color);
-  transition: 4s;
+  transition: .4s;
 }
 
 .swiper-button-prev{
@@ -402,7 +402,97 @@ button {
   right:calc(50% - 3rem);
 }
 /*=============== VALUE ===============*/
+.value__container{
+  row-gap: 3rem;
+}
 
+.value__images{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.value__orbe{
+  width: 266px;
+  height: 316px;
+  background-color: hsl(106, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
+
+.value__img{
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 16px 32px hsla(228, 67%, 25%, 0.25);
+}
+
+.value__description{
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.value__accordion{
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.value__accordion-item{
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  border-radius: .5rem;
+  padding: 1rem .75rem;
+}
+
+.value__accordion-header{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.value__accordion-icon{
+  background-color: var(--first-color-lighten);
+  padding: 5px;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  color: var(--first-color);
+  margin-right: .75rem;
+  transition: .3s;
+}
+
+.value__accordion-title{
+  font-size: var(--small-font-size);
+
+}
+
+.value__accordion-arrow{
+  display: flex;
+  background-color: var(--first-color-lighten);
+  padding: .25rem;
+  color: var(--first-color);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-left: auto;
+  transition: .3s;
+}
+
+.value__accordion-arrow i{
+  transition: .4s;
+}
+
+.value__accordion-description{
+  font-size: var(--smaller-font-size);
+  padding: 1.25rem 2.5rem 0 2.75rem;
+}
+
+.value__accordion-content{
+  overflow: hidden;
+  height: 0;
+  transition: all .25 ease;
+}
 /*Rotate icon and add shadows*/
 
 /*=============== CONTACT ===============*/
