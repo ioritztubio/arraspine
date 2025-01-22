@@ -603,6 +603,7 @@ button {
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
   box-shadow: none;
+  text-align: center;
 }
 
 .contact__card-button:hover {
@@ -772,10 +773,11 @@ button {
   right: 1rem;
   bottom: -30%;
   background-color: var(--container-color);
-  box-shadow: 0 8px 24px hsla(106, 64%, 24%, 0.15);
+  box-shadow: 0 8px 10px hsla(106, 64%, 8%, 0.205);
   display: inline-flex;
   padding: .35rem;
-  border-radius: 0.25rem;
+  border: 1px solid hsla(0, 0%, 6%, 0.093);
+  border-radius: 1.25rem;
   color: var(--title-color);
   font-size: 1.25rem;
   z-index: var(--z-tooltip);

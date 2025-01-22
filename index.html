@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
 
     <title>Arraspine</title>
   </head>
@@ -136,7 +136,7 @@
 
           <div class="bedroom__container swiper">
             <div class="swiper-wrapper">
-              <article class="bedroom__card swiper-slide">
+              <article class="bedroom__card swiper-slide" id="h1">
                 <img
                   src="assets/img/h_2_cama_doble.webp"
                   alt=""
@@ -151,7 +151,7 @@
                 </div>
               </article>
 
-              <article class="bedroom__card swiper-slide">
+              <article class="bedroom__card swiper-slide" id="h2">
                 <img
                   src="assets/img/h_cama_mat_.webp"
                   alt=""
@@ -166,7 +166,7 @@
                 </div>
               </article>
 
-              <article class="bedroom__card swiper-slide">
+              <article class="bedroom__card swiper-slide" id="h3">
                 <img
                   src="assets/img/h_cama_mat_2.webp"
                   alt=""
@@ -374,9 +374,9 @@
                       <p class="contact__card-description">+34 695757341</p>
                     </div>
                   </div>
-                  <button class="button contact__card-button">
+                  <a href="tel:+34 695757341" class="button contact__card-button">
                     Llama ahora
-                  </button>
+                  </a>
                 </div>
 
                 <div class="contact__card-box second__element">
@@ -387,9 +387,9 @@
                       <p class="contact__card-description">+34 943582136</p>
                     </div>
                   </div>
-                  <button class="button contact__card-button">
+                  <a href="tel:+34 943582136" class="button contact__card-button">
                     Llama ahora
-                  </button>
+                  </a>
                 </div>
 
                 <div class="contact__card-box third__element">
@@ -402,9 +402,9 @@
                       </p>
                     </div>
                   </div>
-                  <button class="button contact__card-button">
+                  <a href="mailto:arraspine@arraspine.com" class="button contact__card-button">
                     Escríbenos ahora
-                  </button>
+                  </a>
                 </div>
 
                 <div class="contact__card-box fourth__element">
@@ -421,11 +421,11 @@
                       </p>
                     </div>
                   </div>
-                  <button
+                  <a href="https://www.nekatur.net/arraspine" target="_blank"
                     class="button contact__card-button booking__card-button"
                   >
                     Reserva ahora
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -534,7 +534,7 @@
     </footer>
 
     <!--========== SCROLL UP ==========-->
-    <a href="" class="scroll-up" id="scroll-up">
+    <a href="#" class="scroll-up" id="scroll-up">
       <i class='bx bx-chevrons-up'></i>
     </a>
 
