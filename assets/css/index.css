@@ -120,10 +120,10 @@ body.dark-theme{
   --second-color: hsl(32, 100%, 74%);
   --second-color-lighten: hsl(24, 38%, 15%);
   --title-color: hsl(106, 8%, 94%);
-  --text-color: hsl(104, 7%, 68%);
+  --text-color: hsl(106, 13%, 81%);
   --second-title-color: hsl(24, 86%, 56%);
   --second-text-color: hsl(24, 50%, 66%);
-  --border-color: hsl(103, 20%, 15%);
+  --border-color: hsl(106, 18%, 19%);
   --body-color: hsl(0deg 0% 6.27%);
   --container-color: hsl(104, 16%, 14%);
 
@@ -136,6 +136,7 @@ body.dark-theme{
 .dark-theme .home__img,
 .dark-theme .bedroom__card{
   box-shadow: none;
+  border: 1px solid hsl(105, 17%, 23%);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
