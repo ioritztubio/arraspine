@@ -103,13 +103,40 @@ button {
 }
 
 /*=============== THEME ===============*/
+.change-theme{
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+}
 
+.change-theme:hover{
+  color: var(--first-color);
+}
 /*========== Variables Dark theme ==========*/
+body.dark-theme{
+  --first-color: hsl(106, 66%, 66%);
+  --first-color-lighten:  hsl(99, 38%, 15%);
+  --second-color: hsl(32, 100%, 74%);
+  --second-color-lighten: hsl(24, 38%, 15%);
+  --title-color: hsl(106, 8%, 94%);
+  --text-color: hsl(104, 7%, 68%);
+  --second-title-color: hsl(24, 86%, 56%);
+  --second-text-color: hsl(24, 50%, 66%);
+  --border-color: hsl(103, 20%, 15%);
+  --body-color: hsl(0deg 0% 6.27%);
+  --container-color: hsl(104, 16%, 14%);
 
+}
 /*========== 
     Color changes in some parts of 
     the website, in dark theme 
 ==========*/
+.dark-theme .nav__menu, 
+.dark-theme .home__img,
+.dark-theme .bedroom__card{
+  box-shadow: none;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -227,6 +254,19 @@ button {
   color: hsl(0, 0%, 42%);
 }
 
+.scroll-header .change-theme{
+  color: #131313;
+}
+
+.dark-theme .scroll-header .nav__logo,
+.dark-theme .scroll-header .change-theme{
+  color: #fff;
+}
+
+.dark-theme .scroll-header .nav__logo:hover,
+.dark-theme .scroll-header .change-theme:hover{
+  color: #c4c4c4;
+}
 /* Active link */
 .active-link {
   background: linear-gradient(0deg, hsla(101, 59%, 46%, 0.877), hsl(101, 66%, 40%));
@@ -252,6 +292,11 @@ button {
 .home__title,
 .home__value-number {
   color: var(--first-color-lighten);
+}
+
+.dark-theme .home__title,
+.dark-theme .home__value-number {
+  color: var(--first-color);
 }
 
 .home__title {
