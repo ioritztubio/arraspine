@@ -103,21 +103,22 @@ button {
 }
 
 /*=============== THEME ===============*/
-.change-theme{
+.change-theme {
   font-size: 1.25rem;
   color: #fff;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.change-theme:hover{
+.change-theme:hover {
   color: var(--first-color);
 }
 /*========== Variables Dark theme ==========*/
-body.dark-theme{
+body.dark-theme {
   --first-color: hsl(106, 66%, 66%);
-  --first-color-lighten:  hsl(99, 38%, 15%);
-  --second-color: hsl(32, 100%, 74%);
+  --first-color-lighten: hsl(99, 38%, 15%);
+  --first-color-light: hsl(108, 52%, 94%);
+  --second-color: hsl(24, 73%, 54%);
   --second-color-lighten: hsl(24, 38%, 15%);
   --title-color: hsl(106, 8%, 94%);
   --text-color: hsl(106, 13%, 81%);
@@ -126,15 +127,14 @@ body.dark-theme{
   --border-color: hsl(106, 18%, 19%);
   --body-color: hsl(0deg 0% 6.27%);
   --container-color: hsl(104, 16%, 14%);
-
 }
 /*========== 
     Color changes in some parts of 
     the website, in dark theme 
 ==========*/
-.dark-theme .nav__menu, 
+.dark-theme .nav__menu,
 .dark-theme .home__img,
-.dark-theme .bedroom__card{
+.dark-theme .bedroom__card {
   box-shadow: none;
   border: 1px solid hsl(105, 17%, 23%);
 }
@@ -170,7 +170,7 @@ body.dark-theme{
 }
 
 .main {
-  overflow: hidden; /* For the animations ScrollReveal*/
+  overflow: hidden; 
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -255,22 +255,30 @@ body.dark-theme{
   color: hsl(0, 0%, 42%);
 }
 
-.scroll-header .change-theme{
+.scroll-header .change-theme {
   color: #131313;
 }
 
+.dark-theme .scroll-header {
+  background-color: hsl(0, 0%, 6%);
+}
+
 .dark-theme .scroll-header .nav__logo,
-.dark-theme .scroll-header .change-theme{
+.dark-theme .scroll-header .change-theme {
   color: #fff;
 }
 
 .dark-theme .scroll-header .nav__logo:hover,
-.dark-theme .scroll-header .change-theme:hover{
+.dark-theme .scroll-header .change-theme:hover {
   color: #c4c4c4;
 }
 /* Active link */
 .active-link {
-  background: linear-gradient(0deg, hsla(101, 59%, 46%, 0.877), hsl(101, 66%, 40%));
+  background: linear-gradient(
+    0deg,
+    hsla(101, 59%, 46%, 0.877),
+    hsl(101, 66%, 40%)
+  );
   color: var(--body-color);
   border-radius: 50rem;
   box-shadow: 0 4px 8px hsla(101, 59%, 46%, 0.25);
@@ -297,7 +305,7 @@ body.dark-theme{
 
 .dark-theme .home__title,
 .dark-theme .home__value-number {
-  color: var(--first-color);
+  color: var(--first-color-light);
 }
 
 .home__title {
@@ -348,6 +356,13 @@ body.dark-theme{
   border-radius: 135px 135px 0 0;
 }
 
+.dark-theme .home__orbe {
+  background: linear-gradient(
+    180deg,
+    hsl(0, 0%, 15%) 93%,
+    hsl(0, 0%, 22%) 100%
+  );
+}
 .home__img {
   position: absolute;
   width: 250px;
@@ -464,6 +479,10 @@ body.dark-theme{
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+.value__imag-2 {
+  display: none;
 }
 
 .value__orbe {
@@ -801,8 +820,8 @@ body.dark-theme{
 }
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: .6rem;
-  border-radius: .5rem;
+  width: 0.6rem;
+  border-radius: 0.5rem;
   background-color: hsl(106, 8%, 86%);
 }
 ::-webkit-scrollbar-thumb {
@@ -811,17 +830,16 @@ body.dark-theme{
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(106, 8%, 54%);
-
 }
 /*=============== SCROLL UP ===============*/
-.scroll-up{
+.scroll-up {
   position: fixed;
   right: 1rem;
   bottom: -30%;
   background-color: var(--container-color);
   box-shadow: 0 8px 10px hsla(106, 64%, 8%, 0.205);
   display: inline-flex;
-  padding: .35rem;
+  padding: 0.35rem;
   border: 1px solid hsla(0, 0%, 6%, 0.093);
   border-radius: 1.25rem;
   color: var(--title-color);
@@ -830,19 +848,382 @@ body.dark-theme{
   transition: 0.5s;
 }
 
-.scroll-up:hover{
+.scroll-up:hover {
   transform: translateY(-0.25rem);
   color: var(--first-color);
 }
 /* Show Scroll Up*/
-.show-scroll{
+.show-scroll {
   bottom: 8rem;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
+  .section {
+    padding: 3.5rem 0 1rem;
+  }
+
+  .home {
+    padding-bottom: 0;
+  }
+
+  .contact__card {
+    grid-template-columns: repeat(1, 250px);
+    justify-content: center;
+  }
+
+  .first__element,
+  .second__element,
+  .third__element,
+  .fourth__element {
+    grid-column: 1 / 2;
+  }
+
+  .footer__info {
+    padding-bottom: 9rem;
+  }
+  .footer__content {
+    gap: 2.5rem;
+    grid-template-columns: repeat(1, max-content);
+  }
+}
+@media screen and (max-width: 320px) {
+  .nav__menu {
+    padding: 1rem 1.5rem;
+  }
+
+  .home__value {
+    column-gap: 1rem;
+  }
+
+  .home__img {
+    width: 220px;
+    height: 280px;
+  }
+
+  .home__orbe {
+    width: 240px;
+    height: 264px;
+  }
+
+  .bedroom__card {
+    width: 230px;
+    padding: 0.5rem 0.5rem 0.75rem;
+  }
+
+  .value__img,
+  .contact__img {
+    width: 220px;
+    height: 260px;
+  }
+
+  .value__orbe,
+  .contact__orbe {
+    width: 236px;
+    height: 276px;
+  }
+}
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .nav__menu {
+    width: 342px;
+  }
 
+  .footer__container {
+    row-gap: 3rem;
+  }
+  .footer__description-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+  }
+  .footer__content {
+    gap: 3rem 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+  }
+  .home__orbe {
+    align-self: flex-end;
+  }
+
+  .home__value {
+    padding-bottom: 2rem;
+  }
+
+  .value__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .contact__container {
+    align-items: flex-start;
+  }
+  .value__images {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  .value__imag,
+  .value__imag-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .value__orbe,
+  .value__orbe-2 {
+    width: 266px;
+    height: 316px;
+    background-color: hsl(0, 0%, 97%);
+    border-radius: 40px;
+  }
+
+  .value__img,
+  .value__img-2 {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 34px;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0px 10px 20px hsla(228, 67%, 25%, 0.25);
+  }
+
+  .footer__container {
+    row-gap: 5rem;
+  }
+
+  .footer__logo {
+    font-size: var(--h2-font-size);
+  }
+
+  .footer__description {
+    font-size: var(--medium-font-size);
+  }
+}
 /* For large devices */
+@media screen and (min-width: 1023px) {
+  .section {
+    padding: 8.5rem 3rem 0rem 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .section__title {
+    font-size: 2.25rem;
+  }
+
+  .section__subtitle {
+    font-size: var(--normal-font-size);
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__menu {
+    width: initial;
+    margin-left: auto;
+  }
+
+  .nav__theme {
+    margin-top: 8px;
+  }
+
+  .dark-theme .nav__menu {
+    border: none;
+  }
+  .nav__list {
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  .nav__link {
+    color: var(--text-color-light);
+  }
+
+  .nav__link i {
+    display: none;
+  }
+
+  .nav__button {
+    display: inline-block;
+  }
+
+  .active-link {
+    background: none;
+    box-shadow: none;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+  }
+
+  .change-theme {
+    margin: 0 3rem;
+
+    color: var(--text-color-light);
+  }
+
+  .scroll-header,
+  .nav__link,
+  .scroll-header .change-theme {
+    color: var(--text-color);
+  }
+
+  .scroll-header .active-link {
+    color: var(--first-color);
+  }
+
+  .home {
+    padding-bottom: 0;
+  }
+
+  .home__container {
+    padding-top: 5rem;
+    column-gap: 2rem;
+  }
+
+  .home__description {
+    padding-bottom: 3rem;
+  }
+  .home__value {
+    padding-bottom: 8rem;
+    column-gap: 4rem;
+  }
+
+  .home__title {
+    margin-bottom: 2rem;
+  }
+
+  .hombe__description {
+    margin-bottom: 2.5rem;
+  }
+
+  .home__orbe {
+    width: 454px;
+    height: 550px;
+    border-radius: 230px 230px 0 0;
+  }
+
+  .home__img {
+    width: 425px;
+    height: 566px;
+    border-radius: 210px 210px 12px 12px;
+    bottom: -2rem;
+  }
+
+  .bedroom__container {
+    padding-top: 3rem;
+  }
+
+  .bedroom__card {
+    width: 320px;
+    padding: 0.75rem 0.75rem 2rem;
+  }
+
+  .bedroom__data {
+    padding: 0 0.25rem 0 0.75rem;
+  }
+
+  .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    align-items: center;
+  }
+
+  .value__container {
+    align-items: flex-start;
+    column-gap: 2.5rem;
+  }
+
+  .value__orbe,
+  .contact__orbe {
+    width: 501px;
+    height: 641px;
+    border-radius: 258px 258px 16px 16px;
+  }
+
+  .value__img,
+  .contact__img {
+    width: 475px;
+    height: 600px;
+    border-radius: 238px 238px 12px 12px;
+  }
+
+  .value__imag-2 {
+    display: none;
+  }
+
+  .value__accordion-title {
+    font-size: var(--normal-font-size);
+  }
+
+  .value__accordion-item {
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+  }
+
+  .value__accordion-description {
+    font-size: var(--small-font-size);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 3rem;
+  }
+
+  .footer__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__links {
+    row-gap: 1rem;
+  }
+
+  .footer__info {
+    flex-direction: row;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+  }
+
+  .show-scroll {
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home__container {
+    column-gap: 4rem;
+  }
+}
 
 /* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px){
+  body{
+    zoom: 1.5;
+  }
+}
+
+@media screen and (min-width: 4096px){
+  body{
+    zoom: 3;
+  }
+  
+}
