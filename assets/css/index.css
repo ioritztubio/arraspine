@@ -217,112 +217,7 @@ body.dark-theme {
   padding-left: 2rem;
 }
 
-.lang__menu {
-  display: flex-start;
-  align-items: center;
-  position: relative;
-}
-.lang__menu ul {
-  display: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 1rem;
-  background-color: var(--container-color);
-  border: 1px solid var(--border-color);
-  box-shadow: 3px 10px 24px hwb(0 40% 60% / 0.15);
-  position: absolute;
-  top: 15px;
-  left: -50px;
-}
 
-.lang__menu ul li {
-  list-style: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-  display: flex;
-  justify-content: space-between;
-}
-
-.lang__menu ul li:hover {
-  background-color: hsl(0, 0%, 90%);
-}
-
-.lang__menu ul li:hover a {
-  color: black;
-}
-
-.lang__menu ul li a {
-  color: #000;
-  text-decoration: none;
-}
-
-.lang__menu ul li a::before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 1rem;
-  width: 32px;
-  height: 32px;
-  background-size: cover;
-}
-
-.lang__selected-lang a {
-  color: #fff;
-  text-decoration: none;
-}
-.es::before {
-  background-image: url("../img/flags/flag.webp");
-}
-.eu::before {
-  background-image: url("../img/flags/basque-country.webp");
-}
-
-.en::before {
-  background-image: url("../img/flags/united-kingdom.webp");
-}
-.fr::before {
-  background-image: url("../img/flags/france.webp");
-}
-
-.lang__menu:hover ul {
-  display: block;
-}
-
-.dark-theme .lang__menu ul {
-  background-color: hsl(0, 0%, 18%);
-}
-
-.lang__selected-lang {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  column-gap: 0.25rem;
-}
-
-.lang__selected-lang::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/flags/flag.webp");
-  background-size: cover;
-}
-
-.scroll-header .lang__selected-lang a {
-  color: #131313;
-}
-
-.dark-theme .lang__selected-lang a {
-  color: #fff;
-}
-
-.dark-theme .lang__menu ul li a {
-  color: #fff;
-}
-
-.dark-theme .lang__menu ul li:hover a {
-  color: #000;
-}
 .nav__theme {
   cursor: pointer;
   display: flex;
@@ -421,6 +316,10 @@ body.dark-theme {
 .home__title,
 .home__value-number {
   color: var(--first-color-lighten);
+}
+
+.home__value-number {
+  min-width: 110px;
 }
 
 .dark-theme .home__title,

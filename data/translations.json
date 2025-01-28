@@ -1,0 +1,246 @@
+{
+  "header": {
+    "home": {
+      "en": "Home",
+      "es": "Inicio",
+      "eu": "Hasiera",
+      "fr": "Accueil"
+    },
+    "rooms": {
+      "en": "Rooms",
+      "es": "Habitaciones",
+      "eu": "Gelak",
+      "fr": "Chambres"
+    },
+    "values": {
+      "en": "Values",
+      "es": "Valores",
+      "eu": "Balioak",
+      "fr": "Valeurs"
+    },
+    "contact": {
+      "en": "Contact",
+      "es": "Contacto",
+      "eu": "Kontaktua",
+      "fr": "Contact"
+    }
+  },
+  "home": {
+    "title": {
+      "en": "Nature <br> tradition <br> and rest",
+      "es": "Naturaleza <br> tradición <br> y descanso",
+      "eu": "Natura <br> tradizioa <br> eta atseden",
+      "fr": "Nature <br> tradition <br> et repos"
+    },
+    "description": {
+      "en": "Find your ideal refuge in the heart of nature.Charming rooms to disconnect and dream in Astigarraga.",
+      "es": "Encuentra tu refugio ideal en el corazón de la naturaleza.Habitaciones con encanto para desconectar y soñar en Astigarraga.",
+      "eu": "Aurkitu zure atseden idealak naturaren baitan. Gelak txarmagarriak Astigarragan deskonektatzeko eta amets egiteko.",
+      "fr": "Trouvez votre refuge idéal au cœur de la nature.Chambres charmantes pour déconnecter et rêver à Astigarraga."
+    },
+    "value1": {
+      "en": "of San Sebastián",
+      "es": "de San Sebastián",
+      "eu": "Donostiatik <br> hurbil",
+      "fr": "de Saint-Sébastien"
+    },
+    "value2": {
+      "en": "cider-houses <br> nearby",
+      "es": "Sidrerías <br> cerca",
+      "eu": "Sagardotegiak <br> hurbil",
+      "fr": "des cidreries"
+    },
+    "value3": {
+      "en": "hiking routes",
+      "es": "rutas de <br> senderismo",
+      "eu": "mendizale <br> ibilbideak",
+      "fr": "sentiers de <br> randonnée"
+    }
+  },
+  "rooms": {
+    "trans-title": {
+      "en": "Rooms",
+      "es": "Habitaciones",
+      "eu": "Gelak",
+      "fr": "Chambres"
+    },
+    "trans-description": {
+      "en": "Find our charming rooms to disconnect and dream in Arraspiñe.",
+      "es": "Encuentra nuestras habitaciones con encanto para desconectar y soñar en Arraspiñe.",
+      "eu": "Deskonektatzeko eta amets egiteko gure gelak aurkitu Arraspiñe.",
+      "fr": "Trouvez nos chambres charmantes pour déconnecter et rêver à Arraspiñe."
+    },
+    "rooms": [
+      {
+        "id": 1,
+        "title": {
+          "en": "Room N 1",
+          "es": "Habitación N.º 1",
+          "eu": "1. Gela",
+          "fr": "Chambre N° 1"
+        },
+        "description": {
+          "en": "Twin room with private bathroom and views of the countryside.",
+          "es": "Habitación doble con baño privado y vistas al campo.",
+          "eu": "Bi oheko gela, bainugela pribatua eta landa-eremuko bistak.",
+          "fr": "Chambre double avec salle de bain privée et vue sur la campagne."
+        },
+        "price": {
+          "high_season": 65,
+          "low_season": 60
+        },
+        "img": [
+          "assets/img/rooms/h1/room1.webp",
+          "assets/img/rooms/h1/room1.webp"
+        ]
+      },
+      {
+        "id": 2,
+        "title": {
+          "en": "Room N 2",
+          "es": "Habitación N.º 2",
+          "eu": "2. Gela",
+          "fr": "Chambre N° 2"
+        },
+        "description": {
+          "en": "Twin room with private bathroom and views of the countryside.",
+          "es": "Habitación doble con baño privado y vistas al campo.",
+          "eu": "Bi oheko gela, bainugela pribatua eta landa-eremuko bistak.",
+          "fr": "Chambre double avec salle de bain privée et vue sur la campagne."
+        },
+        "price": {
+          "high_season": 65,
+          "low_season": 60
+        },
+        "img": [
+          "assets/img/rooms/h2/room2.webp",
+          "assets/img/rooms/h2/room2.webp"
+        ]
+      },
+      {
+        "id": 3,
+        "title": {
+          "en": "Room N 3",
+          "es": "Habitación N.º 3",
+          "eu": "3. Gela",
+          "fr": "Chambre N° 3"
+        },
+        "description": {
+          "en": "Large room with double bed, private bathroom and views of the countryside.",
+          "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
+          "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
+          "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
+        },
+        "price": {
+          "high_season": 65,
+          "low_season": 60
+        },
+        "img": [
+          "assets/img/rooms/h3/room3.webp",
+          "assets/img/rooms/h3/room3.webp"
+        ]
+      },
+      {
+        "id": 4,
+        "title": {
+          "en": "Room N 4",
+          "es": "Habitación N.º 4",
+          "eu": "4. Gela",
+          "fr": "Chambre N° 4"
+        },
+        "description": {
+          "en": "Large room with double bed, private bathroom and views of the countryside.",
+          "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
+          "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
+          "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
+        },
+        "price": {
+          "high_season": 65,
+          "low_season": 60
+        },
+        "img": [
+          "assets/img/rooms/h4/room4.webp",
+          "assets/img/rooms/h4/room4.webp"
+        ]
+      },
+      {
+        "id": 5,
+        "title": {
+          "en": "Room N 5",
+          "es": "Habitación N.º 5",
+          "eu": "5. Gela",
+          "fr": "Chambre N° 5"
+        },
+        "description": {
+          "en": "Room with two single beds, private bathroom and balcony with views of the countryside.",
+          "es": "Habitación con dos camas individuales, baño privado y balcón con vistas al campo.",
+          "eu": "Bi oheko gela, bainugela pribatua eta balkoia landa-eremuko bistak dituela.",
+          "fr": "Chambre avec deux lits simples, salle de bain privée et balcon avec vue sur la campagne."
+        },
+        "price": {
+          "high_season": 65,
+          "low_season": 60
+        },
+        "img": [
+          "assets/img/rooms/h5/room5_balcony.webp",
+          "assets/img/rooms/h5/room5_bathroom.webp",
+          "assets/img/rooms/h5/room5_view1.webp",
+          "assets/img/rooms/h5/room5_view2.webp",
+          "assets/img/rooms/h5/room5_view3.webp",
+          "assets/img/rooms/h5/room5.webp"
+        ]
+      },
+      {
+        "id": 6,
+        "title": {
+          "en": "Room N 6",
+          "es": "Habitación N.º 6",
+          "eu": "6. Gela",
+          "fr": "Chambre N° 6"
+        },
+        "description": {
+          "en": "Large room with double bed, private bathroom and views of the countryside.",
+          "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
+          "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
+          "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
+        },
+        "price": {
+          "high_season": 65,
+          "low_season": 60
+        },
+        "img": [
+          "assets/img/rooms/h6/room6.webp",
+          "assets/img/rooms/h6/room6.webp"
+        ]
+      }
+    ],
+    "apartment": [
+      {
+        "title": {
+          "en": "Apartment",
+          "es": "Apartamento",
+          "eu": "Apartamentua",
+          "fr": "Appartement"
+        },
+        "description": {
+          "en": "Large apartment with two double bedrooms, kitchen, dining room, bathroom and terrace with the views of the countryside.",
+          "es": "Amplio apartamento con dos habitaciones dobles, cocina, comedor, baño y terraza con vistas al campo.",
+          "eu": "Apartamentu zabala, bi logela bikoitz, sukaldea, jangela, bainugela eta landa-eremuko bistak dituen terraza.",
+          "fr": "Grand appartement avec deux chambres doubles, cuisine, salle à manger, salle de bain et terrasse avec vue sur la campagne."
+        },
+        "price": {
+          "high_season": 150,
+          "low_season": 150
+        },
+        "img": [
+          "assets/img/apartment/ap_entrance.webp",
+          "assets/img/apartment/ap_kitchen.webp",
+          "assets/img/apartment/ap_room1.webp",
+          "assets/img/apartment/ap_room2.webp",
+          "assets/img/apartment/ap_bathroom.webp",
+          "assets/img/apartment/ap_dining_room.webp"
+        ]
+      }
+    ]
+  }
+}

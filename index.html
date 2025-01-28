@@ -37,28 +37,28 @@
             <li class="nav__item">
               <a href="#home" class="nav__link active-link">
                 <i class="bx bx-home-alt-2"></i>
-                <span>Inicio</span>
+                <span id="trans__home">Inicio</span>
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#bedroom" class="nav__link">
                 <i class="bx bx-hotel"></i>
-                <span>Habitaciones</span>
+                <span id="trans__rooms">Habitaciones</span>
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#value" class="nav__link">
                 <i class="bx bx-shield"></i>
-                <span>Valores</span>
+                <span id="trans_value">Valores</span>
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
                 <i class="bx bx-phone"></i>
-                <span>Contacto</span>
+                <span id="trans_contact">Contacto</span>
               </a>
             </li>
           </ul>
@@ -67,22 +67,12 @@
         <div class="nav__lang__theme">
 <!-- Language menu -->
 <div class="nav__language">
-  <div class="lang__menu">
-    <div class="lang__selected-lang">
-      <a href="" class="es">ES</a>
-    </div>
-    <ul>
-      <li>
-        <a href="" class="eu">EU</a>
-      </li>
-      <li>
-        <a href="" class="en">EN</a>
-      </li>
-      <li><a href="" class="fr">FR</a>
-      </li>
-    </ul>
-
-  </div>
+  <select name="" class="lang__menu" id="languageSelector">
+    <option value="es" class="es">ES</option>
+    <option value="en" class="en">EN</option>
+    <option value="eu" selected class="eu">EU</option>
+    <option value="fr" class="fr">FR</option>
+  </select>
 </div>
 <!-- Theme change button -->
 
@@ -91,7 +81,7 @@
 </div>
         </div>
         
-        <a href="https://www.nekatur.net/arraspine" target="_blank" class="button nav__button"> Reservar </a>
+        <a href="https://www.nekatur.net/arraspine" target="_blank" class="button nav__button" id="trans__reserve"> Reservar </a>
       </nav>
     </header>
 
@@ -101,12 +91,12 @@
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home_data">
-            <h1 class="home__title">
+            <h1 class="home__title" id="trans_title">
               Naturaleza, <br />
               tradición <br />
               y descanso
             </h1>
-            <p class="home__description">
+            <p class="home__description" id="trans_home-description">
               Encuentra tu refugio ideal en el corazón de la naturaleza.
               Habitaciones con encanto para desconectar y soñar en Astigarraga.
             </p>
@@ -114,12 +104,12 @@
             <div class="home__value">
               <div>
                 <h1 class="home__value-number">15 <span>min</span></h1>
-                <span class="home__value-description"> de San Sebastián </span>
+                <span class="home__value-description" id="trans__home-value1"> de San Sebastián </span>
               </div>
 
               <div>
                 <h1 class="home__value-number">30 <span>+</span></h1>
-                <span class="home__value-description">
+                <span class="home__value-description" id="trans__home-value2">
                   Sidrerías <br />
                   Cerca
                 </span>
@@ -127,7 +117,7 @@
 
               <div>
                 <h1 class="home__value-number">5 <span>+</span></h1>
-                <span class="home__value-description">
+                <span class="home__value-description" id="trans__home-value3">
                   Rutas de <br />
                   Senderismo
                 </span>
@@ -145,22 +135,11 @@
         </div>
       </section>
 
-      <!--==================== LOGOS ====================-->
-      <!--
-        <section class="logos section">
-          <div class="logos__container container grid">
-            <div class="logos__img">
-                <img src="assets/img/logo1.png" alt="">
-            </div>
-          </div>
-        </section>
-    -->
-
       <!--==================== BEDROOMS ====================-->
       <section class="bedroom section" id="bedroom">
         <div class="container">
-          <span class="section__subtitle"> Habitaciones </span>
-          <h2 class="section__title">Descubre nuestras habitaciones</h2>
+          <span class="section__subtitle" id="trans__rooms"> Habitaciones </span>
+          <h2 class="section__title" id="trans__discover-rooms">Descubre nuestras habitaciones</h2>
 
           <div class="bedroom__container swiper">
             <div class="swiper-wrapper">
@@ -445,21 +424,7 @@
         
 
         <div class="footer__content">
-          <div>
-            <h3 class="footer__title">Más información</h3>
-
-            <ul class="footer__links">
-              <li>
-                <a href="#" class="footer__link">Sobre nosotras</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Features</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Noticias </a>
-              </li>
-            </ul>
-          </div>
+          
 
           <div>
             <h3 class="footer__title">
@@ -467,16 +432,6 @@
             </h3>
 
             <ul class="footer__social">
-              <li>
-                <a href="" class="footer__social-link" target="_blank">
-                  <i class='bx bxl-facebook-circle'></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ioritztubio" target="_blank" class="footer__social-link">
-                  <i class='bx bxl-instagram-alt'></i>
-                </a>
-              </li>
               <li>
                 <a href="https://www.nekatur.net/arraspine" target="_blank" class="footer__social-link">
                   <img src="assets/img/nekatur_logo.webp" alt="">
@@ -503,8 +458,8 @@
       <i class='bx bx-chevrons-up'></i>
     </a>
 
-    <!--=============== LOAD ROOM INFO ===============-->
-    <script src="assets/js/loadRooms.js"></script>
+    <!--=============== LANGUAGE SELECTOR ===============-->
+    <script src="assets/js/languageSelector.js"></script>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>

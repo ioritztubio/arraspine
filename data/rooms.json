@@ -1,135 +1,162 @@
 {
-    "rooms": [
-      {
-        "id": 1,
-        "title": {
-          "en": "Room N 1",
-          "es": "Habitación N.º 1",
-          "eu": "1. Gela",
-          "fr": "Chambre N° 1"
-        },
-        "description": {
-          "en": "Twin room with private bathroom and views of the countryside.",
-          "es": "Habitación doble con baño privado y vistas al campo.",
-          "eu": "Bi oheko gela, bainugela pribatua eta landa-eremuko bistak.",
-          "fr": "Chambre double avec salle de bain privée et vue sur la campagne."
-        },
-        "price": {
-          "high_season": 65,
-          "low_season": 60
-        },
-        "img": ["assets/img/rooms/h1/room1.webp", "assets/img/rooms/h1/room1.webp"]
+  "trans-title": {
+    "en": "Rooms",
+    "es": "Habitaciones",
+    "eu": "Gelak",
+    "fr": "Chambres"
+  },
+  "trans-description": {
+    "en": "Find our charming rooms to disconnect and dream in Arraspiñe.",
+    "es": "Encuentra nuestras habitaciones con encanto para desconectar y soñar en Arraspiñe.",
+    "eu": "Deskonektatzeko eta amets egiteko gure gelak aurkitu Arraspiñe.",
+    "fr": "Trouvez nos chambres charmantes pour déconnecter et rêver à Arraspiñe."
+  },
+  "rooms": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Room N 1",
+        "es": "Habitación N.º 1",
+        "eu": "1. Gela",
+        "fr": "Chambre N° 1"
       },
-      {
-        "id": 2,
-        "title": {
-          "en": "Room N 2",
-          "es": "Habitación N.º 2",
-          "eu": "2. Gela",
-          "fr": "Chambre N° 2"
-        },
-        "description": {
-          "en": "Twin room with private bathroom and views of the countryside.",
-          "es": "Habitación doble con baño privado y vistas al campo.",
-          "eu": "Bi oheko gela, bainugela pribatua eta landa-eremuko bistak.",
-          "fr": "Chambre double avec salle de bain privée et vue sur la campagne."
-        },
-        "price": {
-          "high_season": 65,
-          "low_season": 60
-        },
-        "img": ["assets/img/rooms/h2/room2.webp", "assets/img/rooms/h2/room2.webp"]
+      "description": {
+        "en": "Twin room with private bathroom and views of the countryside.",
+        "es": "Habitación doble con baño privado y vistas al campo.",
+        "eu": "Bi oheko gela, bainugela pribatua eta landa-eremuko bistak.",
+        "fr": "Chambre double avec salle de bain privée et vue sur la campagne."
       },
-      {
-        "id": 3,
-        "title": {
-          "en": "Room N 3",
-          "es": "Habitación N.º 3",
-          "eu": "3. Gela",
-          "fr": "Chambre N° 3"
-        },
-        "description": {
-          "en": "Large room with double bed, private bathroom and views of the countryside.",
-          "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
-          "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
-          "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
-        },
-        "price": {
-          "high_season": 65,
-          "low_season": 60
-        },
-        "img": ["assets/img/rooms/h3/room3.webp", "assets/img/rooms/h3/room3.webp"]
+      "price": {
+        "high_season": 65,
+        "low_season": 60
       },
-      {
-        "id": 4,
-        "title": {
-          "en": "Room N 4",
-          "es": "Habitación N.º 4",
-          "eu": "4. Gela",
-          "fr": "Chambre N° 4"
-        },
-        "description": {
-          "en": "Large room with double bed, private bathroom and views of the countryside.",
-          "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
-          "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
-          "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
-        },
-        "price": {
-          "high_season": 65,
-          "low_season": 60
-        },
-        "img": ["assets/img/rooms/h4/room4.webp", "assets/img/rooms/h4/room4.webp"]
+      "img": [
+        "assets/img/rooms/h1/room1.webp",
+        "assets/img/rooms/h1/room1.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Room N 2",
+        "es": "Habitación N.º 2",
+        "eu": "2. Gela",
+        "fr": "Chambre N° 2"
       },
-      {
-        "id": 5,
-        "title": {
-          "en": "Room N 5",
-          "es": "Habitación N.º 5",
-          "eu": "5. Gela",
-          "fr": "Chambre N° 5"
-        },
-        "description": {
-          "en": "Room with two single beds, private bathroom and balcony with views of the countryside.",
-          "es": "Habitación con dos camas individuales, baño privado y balcón con vistas al campo.",
-          "eu": "Bi oheko gela, bainugela pribatua eta balkoia landa-eremuko bistak dituela.",
-          "fr": "Chambre avec deux lits simples, salle de bain privée et balcon avec vue sur la campagne."
-        },
-        "price": {
-          "high_season": 65,
-          "low_season": 60
-        },
-        "img": [
-          "assets/img/rooms/h5/room5_balcony.webp",
-          "assets/img/rooms/h5/room5_bathroom.webp",
-          "assets/img/rooms/h5/room5_view1.webp",
-          "assets/img/rooms/h5/room5_view2.webp",
-          "assets/img/rooms/h5/room5_view3.webp",
-          "assets/img/rooms/h5/room5.webp"
-        ]
+      "description": {
+        "en": "Twin room with private bathroom and views of the countryside.",
+        "es": "Habitación doble con baño privado y vistas al campo.",
+        "eu": "Bi oheko gela, bainugela pribatua eta landa-eremuko bistak.",
+        "fr": "Chambre double avec salle de bain privée et vue sur la campagne."
       },
-      {
-        "id": 6,
-        "title": {
-          "en": "Room N 6",
-          "es": "Habitación N.º 6",
-          "eu": "6. Gela",
-          "fr": "Chambre N° 6"
-        },
-        "description": {
-          "en": "Large room with double bed, private bathroom and views of the countryside.",
-          "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
-          "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
-          "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
-        },
-        "price": {
-          "high_season": 65,
-          "low_season": 60
-        },
-        "img": ["assets/img/rooms/h6/room6.webp", "assets/img/rooms/h6/room6.webp"]
-      }
-    ],
-    "apartment": [
-      {
+      "price": {
+        "high_season": 65,
+        "low_season": 60
+      },
+      "img": [
+        "assets/img/rooms/h2/room2.webp",
+        "assets/img/rooms/h2/room2.webp"
+      ]
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Room N 3",
+        "es": "Habitación N.º 3",
+        "eu": "3. Gela",
+        "fr": "Chambre N° 3"
+      },
+      "description": {
+        "en": "Large room with double bed, private bathroom and views of the countryside.",
+        "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
+        "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
+        "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
+      },
+      "price": {
+        "high_season": 65,
+        "low_season": 60
+      },
+      "img": [
+        "assets/img/rooms/h3/room3.webp",
+        "assets/img/rooms/h3/room3.webp"
+      ]
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Room N 4",
+        "es": "Habitación N.º 4",
+        "eu": "4. Gela",
+        "fr": "Chambre N° 4"
+      },
+      "description": {
+        "en": "Large room with double bed, private bathroom and views of the countryside.",
+        "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
+        "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
+        "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
+      },
+      "price": {
+        "high_season": 65,
+        "low_season": 60
+      },
+      "img": [
+        "assets/img/rooms/h4/room4.webp",
+        "assets/img/rooms/h4/room4.webp"
+      ]
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Room N 5",
+        "es": "Habitación N.º 5",
+        "eu": "5. Gela",
+        "fr": "Chambre N° 5"
+      },
+      "description": {
+        "en": "Room with two single beds, private bathroom and balcony with views of the countryside.",
+        "es": "Habitación con dos camas individuales, baño privado y balcón con vistas al campo.",
+        "eu": "Bi oheko gela, bainugela pribatua eta balkoia landa-eremuko bistak dituela.",
+        "fr": "Chambre avec deux lits simples, salle de bain privée et balcon avec vue sur la campagne."
+      },
+      "price": {
+        "high_season": 65,
+        "low_season": 60
+      },
+      "img": [
+        "assets/img/rooms/h5/room5_balcony.webp",
+        "assets/img/rooms/h5/room5_bathroom.webp",
+        "assets/img/rooms/h5/room5_view1.webp",
+        "assets/img/rooms/h5/room5_view2.webp",
+        "assets/img/rooms/h5/room5_view3.webp",
+        "assets/img/rooms/h5/room5.webp"
+      ]
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "Room N 6",
+        "es": "Habitación N.º 6",
+        "eu": "6. Gela",
+        "fr": "Chambre N° 6"
+      },
+      "description": {
+        "en": "Large room with double bed, private bathroom and views of the countryside.",
+        "es": "Habitación amplia con cama doble, baño privado y vistas al campo.",
+        "eu": "Logela handia, ohe bikoitza, bainugela pribatua eta landa-eremuko bistak.",
+        "fr": "Grande chambre avec lit double, salle de bain privée et vue sur la campagne."
+      },
+      "price": {
+        "high_season": 65,
+        "low_season": 60
+      },
+      "img": [
+        "assets/img/rooms/h6/room6.webp",
+        "assets/img/rooms/h6/room6.webp"
+      ]
+    }
+  ],
+  "apartment": [
+    {
       "title": {
         "en": "Apartment",
         "es": "Apartamento",
@@ -155,6 +182,5 @@
         "assets/img/apartment/ap_dining_room.webp"
       ]
     }
-    ]
-  }
-  
+  ]
+}
