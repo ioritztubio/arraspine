@@ -380,7 +380,7 @@ body.dark-theme {
 }
 
 .home__value-number {
-  min-width: 110px;
+  width: 78px;
 }
 
 .dark-theme .home__title,
@@ -475,7 +475,6 @@ body.dark-theme {
 .nav__button {
   display: none;
 }
-/*=============== LOGOS ===============*/
 
 /*=============== BEDROOM ===============*/
 .bedroom__container {
@@ -952,6 +951,14 @@ body.dark-theme {
     padding-bottom: 0;
   }
 
+  .home__description{
+    width: 90%;
+  }
+
+  .home__value{
+    column-gap: .5rem;
+  }
+
   .contact__card {
     grid-template-columns: repeat(1, 250px);
     justify-content: center;
@@ -978,7 +985,7 @@ body.dark-theme {
   }
 
   .home__value {
-    column-gap: 1rem;
+    column-gap: 1.5rem;
   }
 
   .home__img {
