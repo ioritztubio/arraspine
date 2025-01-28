@@ -141,4 +141,5 @@ async function translateSections(selectedLanguage) {
 
   //Footer section
   document.getElementById('footer__description').innerHTML = data.footer.description[selectedLanguage];
+  document.getElementById('footer__social-media').innerHTML = data.footer.social[selectedLanguage];
 }
