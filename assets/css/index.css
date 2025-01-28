@@ -224,6 +224,53 @@ body.dark-theme {
   align-items: center;
 }
 
+.lang__menu {
+  padding: 0.5rem;
+  background-color: #333333; 
+  border: 1px solid #5a5a5a; 
+  border-radius: 0.5rem; 
+  color: #fff; 
+  font-size: var(--smaller-font-size);
+  cursor: pointer;
+  appearance: none; 
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.lang__menu:hover {
+  background-color: #535353; 
+  border: 1px solid #535353;
+}
+
+
+.lang__menu:focus {
+  outline: none; /* Elimina el contorno por defecto */
+  background-color: #555555;
+}
+
+.lang__menu option {
+  background-color: #333333; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  text-align: center;
+  font-size: var(--smaller-font-size); /* Tamaño de texto */
+}
+
+.lang__menu option:hover {
+  background-color: #444444; /* Fondo más claro al pasar el ratón */
+}
+
+.scroll-header .lang__menu{
+  background-color: #fff;
+  color: #333333;
+  border: 1px solid #333333;  
+}
+
+.scroll-header .lang__menu option {
+  background-color: #fff; /* Fondo oscuro */
+  color: #333333; /* Texto blanco */
+}
+
 @media screen and (max-width: 1024px) {
   .nav__menu {
     position: fixed;

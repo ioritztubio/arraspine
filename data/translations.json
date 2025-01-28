@@ -23,6 +23,12 @@
       "es": "Contacto",
       "eu": "Kontaktua",
       "fr": "Contact"
+    },
+    "reserve": {
+      "en": "Reserve",
+      "es": "Reservar",
+      "eu": "Erreserbatu",
+      "fr": "Réserver"
     }
   },
   "home": {
@@ -58,16 +64,16 @@
     }
   },
   "rooms": {
-    "trans-title": {
+    "title": {
       "en": "Rooms",
       "es": "Habitaciones",
       "eu": "Gelak",
       "fr": "Chambres"
     },
-    "trans-description": {
+    "description": {
       "en": "Find our charming rooms to disconnect and dream in Arraspiñe.",
       "es": "Encuentra nuestras habitaciones con encanto para desconectar y soñar en Arraspiñe.",
-      "eu": "Deskonektatzeko eta amets egiteko gure gelak aurkitu Arraspiñe.",
+      "eu": "Naturaz gozatzeko eta lasaitasuna lortzeko gure gelak aurkitu Arraspiñe.",
       "fr": "Trouvez nos chambres charmantes pour déconnecter et rêver à Arraspiñe."
     },
     "rooms": [
@@ -242,5 +248,181 @@
         ]
       }
     ]
+  },
+  "values": {
+    "title": {
+      "en": "Our values",
+      "es": "Nuestros valores",
+      "eu": "Gure balioak",
+      "fr": "Nos valeurs"
+    },
+    "subtitle": {
+      "en": "The essence of Arraspine.",
+      "es": "La esencia de Arraspine.",
+      "eu": "Arraspineren oinarriak.",
+      "fr": "L'essence d'Arraspine."
+    },
+    "description": {
+      "en": "We are a family business that offers a personalized service to make your stay unforgettable. <br />",
+      "es": "Nosotras siempre estaremos dispuestas para ayudarte en lo que necesites, ofreciendote así nuestro mejor servicio. Queremos que esta esperiencia rural se guarde en tus recuerdos. <br />",
+      "eu": "Gure etxeko langileek zure irteera ahaztezin bihurtzeko pertsonalizatutako zerbitzua eskaintzen dugu. <br />",
+      "fr": "Nous sommes une entreprise familiale qui offre un service personnalisé pour rendre votre séjour inoubliable. <br />"
+    },
+    "accordion": [
+      {
+        "title": {
+          "es": "Sostenibilidad",
+          "en": "Sustainability",
+          "eu": "Iraunkortasuna",
+          "fr": "Durabilité"
+        },
+        "description": {
+          "es": "Creemos firmemente en la importancia de cuidar el medio ambiente. Practicamos la agricultura orgánica y promovemos métodos ecológicos en todas nuestras actividades. Buscamos un equilibrio entre el desarrollo de nuestra finca y la preservación de los recursos naturales para las futuras generaciones.",
+          "en": "We firmly believe in the importance of taking care of the environment. We practice organic farming and promote ecological methods in all our activities. We seek a balance between the development of our farm and the preservation of natural resources for future generations.",
+          "eu": "Ingurumena zaindu behar dela sinesten dugu. Nekazaritza ekologikoa praktikatzen dugu eta gure jarduera guztietan metodo ekologikoak sustatzen ditugu. Gure landetegiaren garapena eta baliabide naturalen babesa etorkizuneko belaunaldiak kontuan hartuz orekatzea bilatzen dugu.",
+          "fr": "Nous croyons fermement en l'importance de prendre soin de l'environnement. Nous pratiquons l'agriculture biologique et promouvons des méthodes écologiques dans toutes nos activités. Nous recherchons un équilibre entre le développement de notre ferme et la préservation des ressources naturelles pour les générations futures."
+        }
+      },
+      {
+        "title": {
+          "es": "Autenticidad",
+          "en": "Authenticity",
+          "eu": "Zineskotasuna",
+          "fr": "Authenticité"
+        },
+        "description": {
+          "es": "Queremos que nuestros visitantes vivan una experiencia genuina y sin artificios. Aquí no solo observas el campo, sino que te sumerges en él. Ya sea cosechando frutos, interactuando con los animales o aprendiendo sobre las costumbres locales, cada momento en Arraspine es una vivencia real y única.",
+          "en": "We want our visitors to have a genuine and unpretentious experience. Here you don't just observe the countryside, you immerse yourself in it. Whether you're harvesting fruit, interacting with animals, or learning about local customs, every moment at Arraspine is a real and unique experience.",
+          "eu": "Gure bisitariak esperientzia zinegotzua eta artifizialik gabe izatea nahi dugu. Hemen ez zara soilik landa ikusten, baizik eta bertan murgilduta sentitzen zara. Onddoak biltzen, animaliekin elkarreratzen edo ohiko ohitura lokalak ikasten, Arraspineko momentu guztiak benetako eta bereziak dira.",
+          "fr": "Nous voulons que nos visiteurs vivent une expérience authentique et sans prétention. Ici, vous ne faites pas que observer la campagne, vous vous y plongez. Que vous récoltiez des fruits, interagissiez avec les animaux ou appreniez sur les coutumes locales, chaque moment à Arraspine est une expérience réelle et unique."
+        }
+      },
+      {
+        "title": {
+          "es": "Hospitalidad",
+          "en": "Hospitality",
+          "eu": "Ospitalitatea",
+          "fr": "Hospitalité"
+        },
+        "description": {
+          "es": "Para nosotros, cada huésped es parte de nuestra familia. Nos esforzamos por ofrecer un trato cálido, cercano y personalizado, asegurándonos de que cada visita sea memorable y especial. En nuestro agroturismo, la amabilidad y el respeto son esenciales.",
+          "en": "For us, every guest is part of our family. We strive to offer a warm, close, and personalized treatment, ensuring that each visit is memorable and special. In our agritourism, kindness and respect are essential.",
+          "eu": "Guretzat, bisitari bakoitzak gure familiaren zati bat da. Tratu epel, hurbil eta pertsonalizatua eskaintzea helburu duzue, bakoitzaren bisita gogoragarria eta berezia izatea bermatuz. Gure agroturismoan, jatorra eta errespetua oinarrizkoak dira.",
+          "fr": "Pour nous, chaque invité fait partie de notre famille. Nous nous efforçons d'offrir un traitement chaleureux, proche et personnalisé, en veillant à ce que chaque visite soit mémorable et spéciale. Dans notre agrotourisme, la gentillesse et le respect sont essentiels."
+        }
+      },
+      {
+        "title": {
+          "es": "Bienestar",
+          "en": "Well-being",
+          "eu": "Ongizatea",
+          "fr": "Bien-être"
+        },
+        "description": {
+          "es": "Creemos que la naturaleza tiene el poder de renovar el cuerpo y la mente. Ofrecemos un espacio donde nuestros visitantes pueden desconectar, relajarse y recargar energías. Ya sea disfrutando de un paseo por nuestros senderos, participando en actividades al aire libre o simplemente descansando en nuestras instalaciones, el bienestar de nuestros huéspedes es nuestra prioridad.",
+          "en": "We believe that nature has the power to renew the body and mind. We offer a space where our visitors can disconnect, relax, and recharge their energies. Whether enjoying a walk through our trails, participating in outdoor activities, or simply resting in our facilities, the well-being of our guests is our priority.",
+          "eu": "Sinesten dugu naturak gorputza eta burua berritzeko ahalmena duela. Espazio bat eskaintzen dugu gure bisitariak deskonektatzeko, lasaiatzeko eta energia berriztu ahal izateko. Gure bidetan paseatzen, kanpo-ekoizpenetan parte hartzen edo gure instalazioetan atseden hartzen, gure bisitarien ongizatea gure lehentasuna da.",
+          "fr": "Nous croyons que la nature a le pouvoir de renouveler le corps et l'esprit. Nous offrons un espace où nos visiteurs peuvent se déconnecter, se détendre et recharger leurs énergies. Que vous profitiez d'une promenade sur nos sentiers, participiez à des activités de plein air ou vous reposiez simplement dans nos installations, le bien-être de nos invités est notre priorité."
+        }
+      },
+      {
+        "title": {
+          "es": "Cultura",
+          "en": "Culture",
+          "eu": "Kultura",
+          "fr": "Culture"
+        },
+        "description": {
+          "es": "Valoramos la educación como una herramienta para el desarrollo personal y colectivo y queremos que nuestros visitantes no solo disfruten, sino que también aprendan sobre la vida rural, la agricultura sostenible y las tradiciones que preservamos con tanto cariño.",
+          "en": "We value education as a tool for personal and collective development and we want our visitors to not only enjoy, but also learn about rural life, sustainable agriculture, and the traditions that we preserve with so much affection.",
+          "eu": "Hezkuntza garapen pertsonal eta kolektiborako tresna gisa baloratzen dugu eta gure bisitariak ez soilik gozatzen, baizik eta landa bizitza, nekazaritza iraunkorra eta hainbeste maitasunarekin gorde ditugun ohitura hauetaz ikasten ere nahi dugu.",
+          "fr": "Nous valorisons l'éducation comme un outil de développement personnel et collectif et nous voulons que nos visiteurs non seulement profitent, mais aussi apprennent sur la vie rurale, l'agriculture durable et les traditions que nous préservons avec tant d'affection."
+        }
+      },
+      {
+        "title": {
+          "es": "Compromiso Local",
+          "en": "Local Commitment",
+          "eu": "Konpromezu Lokala",
+          "fr": "Engagement Local"
+        },
+        "description": {
+          "es": "Apoyamos a la comunidad local, promoviendo el consumo de productos regionales y trabajando con productores y artesanos cercanos. Nuestro agroturismo es una extensión de la cultura local, y nos enorgullece ser parte activa de la economía y el crecimiento del área.",
+          "en": "We support the local community, promoting the consumption of regional products and working with nearby producers and artisans. Our agritourism is an extension of local culture, and we are proud to be an active part of the area's economy and growth.",
+          "eu": "Komunitate lokalari babesa ematen diogu, eskualdeko produktuen kontsumoa sustatuz eta hurbileko nekazariekin eta artisautxoein lankidetzan aritzeko. Gure agroturismoa kultura lokalaren luzapena da, eta guretzat harreman aktiboa izatea eskualdeko ekonomiaren eta hazkundearen parte izatea harro gaude.",
+          "fr": "Nous soutenons la communauté locale, en promouvant la consommation de produits régionaux et en travaillant avec des producteurs et artisans locaux. Notre agrotourisme est une extension de la culture locale, et nous sommes fiers de faire partie active de l'économie et de la croissance de la région."
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": {
+      "es": "Estamos aquí para ayudarte",
+      "en": "We are here to help you",
+      "eu": "Hemen gaude zu laguntzeko",
+      "fr": "Nous sommes là pour vous aider"
+    },
+    "subtitle": {
+      "es": "Contacta con nosotras",
+      "en": "Contact us",
+      "eu": "Jarri harremanetan gurekin",
+      "fr": "Contactez-nous"
+    },
+    "description": {
+      "es": "Necesitas escapar de la ciudad y desconectar? ¿Quieres disfrutar de la naturaleza y la tranquilidad? ¿Te gustaría conocer la vida rural y las tradiciones locales? En Arraspine encontrarás todo lo que buscas. Reserva ya tu estancia.",
+      "en": "Do you need to escape the city and disconnect? Do you want to enjoy nature and tranquility? Would you like to learn about rural life and local traditions? At Arraspine you will find everything you are looking for. Book your stay now.",
+      "eu": "Hiriatik ihes egin eta deskonektatu behar duzula? Naturaz gozatzeko eta lasaitasuna bizi nahi duzula? Landa bizitza eta ohitura lokalak ezagutu nahi dituzula? Arraspinen bilatzen duzun guztia aurkituko duzu. Erreserbatu zure egonaldia orain.",
+      "fr": "Vous avez besoin de vous échapper de la ville et de vous déconnecter? Vous voulez profiter de la nature et de la tranquillité? Vous aimeriez en savoir plus sur la vie rurale et les traditions locales? À Arraspine, vous trouverez tout ce que vous cherchez. Réservez votre séjour dès maintenant."
+    },
+    "call": {
+      "es": "Llámanos",
+      "en": "Call us",
+      "eu": "Deitu",
+      "fr": "Appelez-nous"
+    },
+    "cnow": {
+      "es": "Llámanos ahora",
+      "en": "Call us now",
+      "eu": "Deitu orain",
+      "fr": "Appelez-nous maintenant"
+    },
+    "chat": {
+      "es": "Escríbenos",
+      "en": "Chat us",
+      "eu": "Idatzi",
+      "fr": "Discutez avec nous"
+    },
+    "chnow": {
+      "es": "Escríbenos ahora",
+      "en": "Chat us now",
+      "eu": "Idatzi orain",
+      "fr": "Discutez avec nous maintenant"
+    },
+    "reserve": {
+      "es": "Reserva",
+      "en": "Reserve",
+      "eu": "Erreserbatu",
+      "fr": "Réserver"
+    },
+    "rnow": {
+      "es": "Reserva ahora",
+      "en": "Reserve now",
+      "eu": "Erreserbatu orain",
+      "fr": "Réserver maintenant"
+    }
+  },
+  "footer": {
+    "description": {
+      "es": "Nuestra vision es hacer de Arraspine un lugar  de referencia en el turismo rural.",
+      "en": "Our vision is to make Arraspine a reference place in rural tourism.",
+      "eu": "Gure ikuspegia Arraspine turismo ruralaren erreferentzia gune bihurtzea da.",
+      "fr": "Notre vision est de faire d'Arraspine un lieu de référence dans le tourisme rural."
+    },
+    "social": {
+      "es": "Redes sociales",
+      "en": "Social media",
+      "eu": "Sare sozialak",
+      "fr": "Réseaux sociaux"
+    }
   }
 }
