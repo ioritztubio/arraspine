@@ -2,7 +2,7 @@
 console.log('Cargando habitaciones...');
 async function loadRooms() {
     try {
-      const response = await fetch('/rooms.json');
+      const response = await fetch('/data/rooms.json');
       if (!response.ok) {
         throw new Error('Error loading JSON: ' + response.statusText);
       }
