@@ -217,7 +217,6 @@ body.dark-theme {
   padding-left: 2rem;
 }
 
-
 .nav__theme {
   cursor: pointer;
   display: flex;
@@ -226,23 +225,22 @@ body.dark-theme {
 
 .lang__menu {
   padding: 0.5rem;
-  background-color: #333333; 
-  border: 1px solid #5a5a5a; 
-  border-radius: 0.5rem; 
-  color: #fff; 
+  background-color: #333333;
+  border: 1px solid #5a5a5a;
+  border-radius: 0.5rem;
+  color: #fff;
   font-size: var(--smaller-font-size);
   cursor: pointer;
-  appearance: none; 
+  appearance: none;
   width: 100%;
   text-align: center;
   transition: 0.3s;
 }
 
 .lang__menu:hover {
-  background-color: #535353; 
+  background-color: #535353;
   border: 1px solid #535353;
 }
-
 
 .lang__menu:focus {
   outline: none; /* Elimina el contorno por defecto */
@@ -260,10 +258,10 @@ body.dark-theme {
   background-color: #444444; /* Fondo más claro al pasar el ratón */
 }
 
-.scroll-header .lang__menu{
+.scroll-header .lang__menu {
   background-color: #fff;
   color: #333333;
-  border: 1px solid #333333;  
+  border: 1px solid #333333;
 }
 
 .scroll-header .lang__menu option {
@@ -271,15 +269,15 @@ body.dark-theme {
   color: #333333; /* Texto blanco */
 }
 
-.dark-theme .scroll-header .lang__menu{
+.dark-theme .scroll-header .lang__menu {
   padding: 0.5rem;
-  background-color: #333333; 
-  border: 1px solid #5a5a5a; 
-  border-radius: 0.5rem; 
-  color: #fff; 
+  background-color: #333333;
+  border: 1px solid #5a5a5a;
+  border-radius: 0.5rem;
+  color: #fff;
   font-size: var(--smaller-font-size);
   cursor: pointer;
-  appearance: none; 
+  appearance: none;
   width: 100%;
   text-align: center;
   transition: 0.3s;
@@ -935,6 +933,100 @@ body.dark-theme {
 .show-scroll {
   bottom: 8rem;
 }
+
+/*=============== ROOM ===============*/
+.room__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-fixed);
+  transition: 0.4s;
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(106, 4%, 15%, 0.15);
+  transition: 0.3s;
+}
+
+.dark-theme .room__header {
+  background-color: #202020;
+}
+
+.back__home{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #131313;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 81%);
+  transition: .3s;
+}
+
+.back__home:hover{
+  box-shadow: 0px 0px 6px hsla(0, 0%, 0%, 0.2);
+  font-size: 1.4rem;
+}
+
+.dark-theme .back__home{
+  color: #fff;
+  border: 2px solid hsl(0, 0%, 19%);
+}
+
+.dark-theme .back__home:hover{
+  box-shadow: 0px 0px 6px hsla(0, 0%, 74%, 0.2);
+  font-size: 1.4rem;
+}
+
+.room__lang__menu {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 81%);
+  border-radius: 0.5rem;
+  color: #131313;
+  font-size: var(--smaller-font-size);
+  cursor: pointer;
+  appearance: none;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.room__lang__menu:hover {
+ box-shadow: 0px 0px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.dark-theme .room__lang__menu {
+  border: 1px solid hsl(0, 0%, 29%);
+  color: #fff;
+  box-shadow: 0px 0px 6px hsla(0, 0%, 45%, 0.2);
+}
+
+.dark-theme .room__lang__menu:hover {
+  box-shadow: 0px 0px 6px hsla(0, 0%, 74%, 0.2);
+}
+
+.dark-theme .room__lang__menu option {
+  background-color: hsl(0, 0%, 19%);
+  color: #fff;
+}
+
+.room__change-theme {
+  font-size: 1.1rem;
+  color: #4e4e4e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dark-theme .room__change-theme {
+  color: #fff;
+}
+
+.room__change-theme:hover {
+  color: var(--first-color);
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -951,12 +1043,12 @@ body.dark-theme {
     padding-bottom: 0;
   }
 
-  .home__description{
+  .home__description {
     width: 90%;
   }
 
-  .home__value{
-    column-gap: .5rem;
+  .home__value {
+    column-gap: 0.5rem;
   }
 
   .contact__card {
@@ -1126,7 +1218,6 @@ body.dark-theme {
     margin-left: auto;
   }
 
-  
   .dark-theme .nav__menu {
     border: none;
   }

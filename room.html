@@ -1,49 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arraspine</title>
-</head>
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-          <a href="#" class="nav__logo"
-            >Arraspine <i class="bx bxs-home-alt-2"></i
-          ></a>
-          <div class="nav__menu">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#home" class="nav__link active-link">
-                  <i class="bx bx-home-alt-2"></i>
-                  <span>Inicio</span>
-                </a>
-              </li>
-  
-              <li class="nav__item">
-                <a href="#bedroom" class="nav__link">
-                  <i class="bx bx-hotel"></i>
-                  <span>Habitaciones</span>
-                </a>
-              </li>
-  
-              <li class="nav__item">
-                <a href="#value" class="nav__link">
-                  <i class="bx bx-shield"></i>
-                  <span>Valores</span>
-                </a>
-              </li>
-  
-              <li class="nav__item">
-                <a href="#contact" class="nav__link">
-                  <i class="bx bx-phone"></i>
-                  <span>Contacto</span>
-                </a>
-              </li>
-            </ul>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habitación</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <header class="room__header" id="header">
+      <nav class="nav container">
+        <a href="index.html#bedroom" class="back__home"
+          ><i class="bx bx-chevron-left back"></i
+        ></a>
+
+        <div class="nav__lang__theme">
+          <!-- Language menu -->
+          <div class="nav__language">
+            <select name="" class="room__lang__menu" id="languageSelector">
+              <option value="es" class="es">ES</option>
+              <option value="en" class="en">EN</option>
+              <option value="eu" selected class="eu">EU</option>
+              <option value="fr" class="fr">FR</option>
+            </select>
           </div>
-          <a href="#" class="button nav__button"> Reservar </a>
-        </nav>
-      </header>
-</body>
+          <!-- Theme change button -->
+
+          <div class="nav__theme">
+            <i class="bx bx-moon room__change-theme" id="theme-button"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section gallery">
+      <h2>Galería</h2>
+      <div>
+        <img src="imagen1.jpg" alt="Imagen de la habitación" />
+        <img src="imagen2.jpg" alt="Otra imagen de la habitación" />
+        <img src="imagen3.jpg" alt="Vista del balcón" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Información de la Habitación</h2>
+      <p>
+        Descripción breve de la habitación, incluyendo el tamaño, la capacidad y
+        comodidades principales.
+      </p>
+    </section>
+
+    <section class="section services">
+      <h2>Servicios Incluidos</h2>
+      <div class="service">Wi-Fi Gratis</div>
+      <div class="service">Televisión</div>
+      <div class="service">Baño Privado</div>
+      <div class="service">Aire Acondicionado</div>
+    </section>
+
+    <section class="section extras">
+      <h2>Servicios Extra</h2>
+      <div class="extra">Desayuno (+5€)</div>
+      <div class="extra">Limpieza de Ropa (+10€)</div>
+    </section>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+
+    <!--=============== LANGUAGE SELECTOR ===============-->
+    <script src="/assets/js/languageSelector.js"></script>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assests/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
