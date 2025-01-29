@@ -69,6 +69,9 @@ async function translateSections(selectedLanguage) {
       </div>
     `;
 
+    article.addEventListener("click", () => {
+      window.location.href = "room.html";
+  });
     container.appendChild(article);
   });
 
