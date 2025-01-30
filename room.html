@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habitación</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
     />
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
     <header class="room__header" id="header">
@@ -36,12 +39,37 @@
         </div>
       </nav>
     </header>
-    <section class="section gallery">
-      <h2>Galería</h2>
-      <div>
-        <img src="imagen1.jpg" alt="Imagen de la habitación" />
-        <img src="imagen2.jpg" alt="Otra imagen de la habitación" />
-        <img src="imagen3.jpg" alt="Vista del balcón" />
+
+    <!--========== ROOM GALLERY ==========-->
+    <section class="section room__gallery">
+      <!-- Slider main container -->
+      <div class="swiper room__swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="swiper-slide room__slide"
+            style="background-image: url('assets/img/rooms/h1/room1.webp')"
+          ></div>
+          <div
+            class="swiper-slide room__slide"
+            style="
+              background-image: url('assets/img/rooms/h1/room1_bathroom.webp');
+            "
+          ></div>
+          <div
+            class="swiper-slide room__slide"
+            style="background-image: url('assets/img/rooms/h5/room5_view2.webp'); rotate:90deg"
+          ></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev room__button-prev"><i class="bx bx-chevron-left"></i></div>
+        <div class="swiper-button-next room__button-next">
+          <i class="bx bx-chevron-right "></i>
+        </div>
       </div>
     </section>
 
@@ -79,7 +107,8 @@
     <script src="assests/js/scrollreveal.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/roomSwiper.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
