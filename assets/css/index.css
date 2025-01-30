@@ -22,6 +22,7 @@
   --border-color: hsl(103, 20%, 93%);
   --body-color: #fff;
   --container-color: #fff;
+  --highlight-color: rgb(240, 240, 158);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -1031,22 +1032,24 @@ body.dark-theme {
   margin-top: 3rem;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
   align-items: center;
 }
 
 .room__swiper {
   padding-top: 3rem;
-  width: 80%;
-  padding-bottom: 3rem;
+  max-width: 600px;
+
 }
 
 .room__slide{
-  width: 100%;  /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
-  background-size: contain;  /* Ensures the image covers the entire div */
+  height: 60vh; /* Adjust height as needed */
+  background-size: contain; 
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.swiper-paggination {
+  position: relative;
 }
 
 
@@ -1113,6 +1116,11 @@ body.dark-theme {
   .footer__content {
     gap: 2.5rem;
     grid-template-columns: repeat(1, max-content);
+  }
+
+  .room__button-prev,
+  .room__button-next {
+    display: none;
   }
 }
 @media screen and (max-width: 320px) {

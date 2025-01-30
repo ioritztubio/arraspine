@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+let swipeR = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
   
