@@ -713,7 +713,9 @@ body.dark-theme {
   border-radius: 0.5rem;
   transition: 0.3s;
 }
-
+.dark-theme .fourth__element {
+  border: 2px solid var(--second-color-lighten);
+}
 .contact__card-info {
   display: flex;
   align-items: flex-start;
@@ -1028,7 +1030,6 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-
 .room__info {
   padding: 5rem 0rem 0rem 2rem;
 }
@@ -1271,7 +1272,6 @@ body.dark-theme {
   }
 }
 
-
 .services__section {
   padding: 5rem 1.75rem 1.75rem 1.5rem;
 }
@@ -1280,7 +1280,7 @@ body.dark-theme {
   margin-bottom: 1.5rem;
 }
 
-.service__card{
+.service__card {
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -1291,26 +1291,24 @@ body.dark-theme {
   border: 2px solid var(--border-color);
   box-shadow: 4px 4px 8px hsla(0, 0%, 0%, 0.03);
 }
-.service__card i{
+.service__card i {
   background-color: var(--first-color-lighten);
   padding: 5px;
   border-radius: 0.25rem;
   font-size: 18px;
   color: var(--first-color);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.room__grid-container{
-
+.room__grid-container {
   width: 100%;
   gap: 1rem;
-  display:grid;
+  display: grid;
   justify-content: center;
-  grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); ;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
-
-.reserve-button{
+.reserve-button {
   position: fixed;
   bottom: 20px;
   left: 50%;
@@ -1323,23 +1321,22 @@ body.dark-theme {
   font-weight: bold;
   background-color: var(--second-color-lighten);
   border: 1px solid hsla(27, 100%, 37%, 0.9);
-  color: var(--second-color);    
+  color: var(--second-color);
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .reserve-button:hover {
-  background-color:var(--second-color);
+  background-color: var(--second-color);
   color: var(--second-color-lighten);
 }
 
-.dark-theme .reserve-button{
+.dark-theme .reserve-button {
   background-color: var(--second-color-lighten);
   color: var(--second-color);
-  
 }
 
 .dark-theme .reserve-button:hover {
@@ -1347,20 +1344,20 @@ body.dark-theme {
   color: var(--body-color);
 }
 
-.gallery__container{
+.gallery__container {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
 
-.gallery__wrapper{
-  width: 80%;
+.gallery__wrapper {
+  width: 100%;
   columns: 3;
   gap: 1.25rem;
   padding-top: 1.25rem;
 }
 
-.image-gallery img{
+.image-gallery img {
   display: block;
   width: 100%;
   border-radius: 1rem;
@@ -1378,7 +1375,6 @@ body.dark-theme {
     padding: 3.5rem 0 1rem;
   }
 
-
   .home {
     padding-bottom: 0;
   }
@@ -1391,7 +1387,7 @@ body.dark-theme {
     column-gap: 0.5rem;
   }
 
-  .room__info{
+  .room__info {
     padding: 5rem 0rem 0rem 1.5rem;
   }
   .services__section {
@@ -1423,7 +1419,7 @@ body.dark-theme {
     display: none;
   }
 
-  .gallery__wrapper{
+  .gallery__wrapper {
     columns: 2;
   }
 }
@@ -1463,16 +1459,15 @@ body.dark-theme {
     height: 276px;
   }
 
-  .gallery__wrapper{
+  .gallery__wrapper {
     columns: 1;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .gallery__wrapper{
+  .gallery__wrapper {
     columns: 2;
   }
-  
 }
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -1484,7 +1479,7 @@ body.dark-theme {
     row-gap: 3rem;
   }
 
-  .room__info{
+  .room__info {
     padding: 6rem 0rem 3.5rem;
   }
   .footer__description-container {
@@ -1520,7 +1515,7 @@ body.dark-theme {
     display: block;
   }
 
-  .room__info{
+  .room__info {
     padding: 6rem 0rem 1.5rem 3.5rem;
   }
 
@@ -1598,31 +1593,31 @@ body.dark-theme {
     width: auto;
   }
 
-  .room__info{
+  .room__info {
     padding: 7rem 3rem 3.5rem;
   }
 
   .services__section {
     padding: 4rem 3rem 3.5rem;
-    display:  flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .services__title-container{
+  .services__title-container {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .services__title{
+  .services__title {
     width: 100%;
     max-width: 900px;
   }
-  .service__container{
+  .service__container {
     display: flex;
     justify-content: center;
   }
 
-  .room__grid-container{
+  .room__grid-container {
     max-width: 900px;
   }
   .room__swiper {
@@ -1666,7 +1661,7 @@ body.dark-theme {
 
   .nav__lang__theme {
     margin-right: 3rem;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .change-theme {
     color: var(--text-color-light);
@@ -1808,6 +1803,10 @@ body.dark-theme {
 
   .home__container {
     column-gap: 4rem;
+  }
+
+  .section {
+    padding: 8.5rem 0rem 0rem 0rem;
   }
 }
 
