@@ -406,6 +406,20 @@
       }
     ]
   },
+  "gallery":{
+    "title": {
+      "es": "Galería",
+      "en": "Gallery",
+      "eu": "Galeria",
+      "fr": "Galerie"
+    },
+    "description": {
+      "es": "Descubre nuestras instalaciones y entorno.",
+      "en": "Discover our facilities and surroundings.",
+      "eu": "Gure instalazioak eta ingurua ezagutu.",
+      "fr": "Découvrez nos installations et nos environs."
+    }
+  },
   "contact": {
     "title": {
       "es": "Estamos aquí para ayudarte",
@@ -475,5 +489,23 @@
       "eu": "Sare sozialak",
       "fr": "Réseaux sociaux"
     }
+  },
+  "creator":{
+    "es":  "Arraspine. Todos los derechos reservados. <br />Desarrollado por ",
+    "en":  "Arraspine. All rights reserved. <br />Developed by ",
+    "eu":  "Arraspine. Eskubide guztiak erreserbatuta. <br /> ",
+    "fr":  "Arraspine. Tous droits réservés. <br />Développé par "
+  },
+  "terms": {
+    "es": "Términos y condiciones",
+    "en": "Terms and conditions",
+    "eu": "Eskakizunak eta baldintzak",
+    "fr": "Termes et conditions"
+  },
+  "privacy": {
+    "es": "Política de privacidad",
+    "en": "Privacy policy",
+    "eu": "Pribatutasun politika",
+    "fr": "Politique de confidentialité"
   }
 }
