@@ -349,12 +349,14 @@
   top: var(--swiper-pagination-top, auto);
   left: 50%;
   transform: translate(-50%, 0);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   background-color: white;
-  width: 67px;
+  padding-bottom: 2px;
+  border: 1px solid var(--swiper-pagination-border-color, #cccccc);
+  padding-inline: 5px;
 }
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;

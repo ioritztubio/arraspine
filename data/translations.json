@@ -76,6 +76,60 @@
       "eu": "Naturaz gozatzeko eta lasaitasuna lortzeko gure gelak aurkitu Arraspiñe.",
       "fr": "Trouvez nos chambres charmantes pour déconnecter et rêver à Arraspiñe."
     },
+    "services": [
+      {
+        "includes": {
+          "en": "Included services",
+          "es": "Servicios incluidos",
+          "eu": "Barne zerbitzuak",
+          "fr": "Services inclus"
+        },
+        "wifi": {
+          "en": "Free Wi-Fi",
+          "es": "Wi-Fi gratuito",
+          "eu": "Wi-Fi dohainik",
+          "fr": "Wi-Fi gratuit"
+        },
+        "bano": {
+          "en": "Private bathroom",
+          "es": "Baño privado",
+          "eu": "Bainugela pribatua",
+          "fr": "Salle de bain privée"
+        },
+        "acondicionado": {
+          "en": "Air conditioning",
+          "es": "Aire acondicionado",
+          "eu": "Aire girotua",
+          "fr": "Climatisation"
+        },
+        "parking": {
+          "en": "Free parking",
+          "es": "Aparcamiento gratuito",
+          "eu": "Dohako aparkalekua",
+          "fr": "Parking gratuit"
+        }
+      },
+      {
+        "extra": {
+          "en": "Extra services",
+          "es": "Servicios extra",
+          "eu": "Zerbitzu gehigarriak",
+          "fr": "Services supplémentaires"
+        },
+        "desayuno": {
+          "en": "Breakfast (5€)",
+          "es": "Desayuno (5€)",
+          "eu": "Gosaria (5€)",
+          "fr": "Petit-déjeuner (5€)"
+        },
+        "ropa": {
+          "es": "Limpieza de ropa (10€)",
+          "en": "Laundry service (10€)",
+          "eu": "Garbitegi-zerbitzua (10€)",
+          "fr": "Service de blanchisserie (10€)"
+        }
+      }
+    ],
     "rooms": [
       {
         "id": 1,
@@ -97,7 +151,7 @@
         },
         "img": [
           "assets/img/rooms/h1/room1.webp",
-          "assets/img/rooms/h1/room1.webp"
+          "assets/img/rooms/h1/room1_bathroom.webp"
         ]
       },
       {
@@ -120,7 +174,7 @@
         },
         "img": [
           "assets/img/rooms/h2/room2.webp",
-          "assets/img/rooms/h2/room2.webp"
+          "assets/img/rooms/h2/room2_bathroom.webp"
         ]
       },
       {
@@ -143,7 +197,7 @@
         },
         "img": [
           "assets/img/rooms/h3/room3.webp",
-          "assets/img/rooms/h3/room3.webp"
+          "assets/img/rooms/h3/room3_bathroom.webp"
         ]
       },
       {
@@ -166,7 +220,7 @@
         },
         "img": [
           "assets/img/rooms/h4/room4.webp",
-          "assets/img/rooms/h4/room4.webp"
+          "assets/img/rooms/h4/room4_bathroom.webp"
         ]
       },
       {
@@ -192,7 +246,6 @@
           "assets/img/rooms/h5/room5_bathroom.webp",
           "assets/img/rooms/h5/room5_view1.webp",
           "assets/img/rooms/h5/room5_view2.webp",
-          "assets/img/rooms/h5/room5_view3.webp",
           "assets/img/rooms/h5/room5.webp"
         ]
       },
@@ -220,34 +273,32 @@
         ]
       }
     ],
-    "apartment": [
-      {
-        "title": {
-          "en": "Apartment",
-          "es": "Apartamento",
-          "eu": "Apartamentua",
-          "fr": "Appartement"
-        },
-        "description": {
-          "en": "Large apartment with two double bedrooms, kitchen, dining room, bathroom and terrace with the views of the countryside.",
-          "es": "Amplio apartamento con dos habitaciones dobles, cocina, comedor, baño y terraza con vistas al campo.",
-          "eu": "Apartamentu zabala, bi logela bikoitz, sukaldea, jangela, bainugela eta landa-eremuko bistak dituen terraza.",
-          "fr": "Grand appartement avec deux chambres doubles, cuisine, salle à manger, salle de bain et terrasse avec vue sur la campagne."
-        },
-        "price": {
-          "high_season": 150,
-          "low_season": 150
-        },
-        "img": [
-          "assets/img/apartment/ap_entrance.webp",
-          "assets/img/apartment/ap_kitchen.webp",
-          "assets/img/apartment/ap_room1.webp",
-          "assets/img/apartment/ap_room2.webp",
-          "assets/img/apartment/ap_bathroom.webp",
-          "assets/img/apartment/ap_dining_room.webp"
-        ]
-      }
-    ]
+    "apartment": {
+      "title": {
+        "en": "Apartment",
+        "es": "Apartamento",
+        "eu": "Apartamentua",
+        "fr": "Appartement"
+      },
+      "description": {
+        "en": "Large apartment with two double bedrooms, kitchen, dining room, bathroom and terrace with the views of the countryside.",
+        "es": "Amplio apartamento con dos habitaciones dobles, cocina, comedor, baño y terraza con vistas al campo.",
+        "eu": "Apartamentu zabala, bi logela bikoitz, sukaldea, jangela, bainugela eta landa-eremuko bistak dituen terraza.",
+        "fr": "Grand appartement avec deux chambres doubles, cuisine, salle à manger, salle de bain et terrasse avec vue sur la campagne."
+      },
+      "price": {
+        "high_season": 150,
+        "low_season": 150
+      },
+      "img": [
+        "assets/img/apartment/ap_entrance.webp",
+        "assets/img/apartment/ap_kitchen.webp",
+        "assets/img/apartment/ap_room1.webp",
+        "assets/img/apartment/ap_room2.webp",
+        "assets/img/apartment/ap_bathroom.webp",
+        "assets/img/apartment/ap_dining_room.webp"
+      ]
+    }
   },
   "values": {
     "title": {

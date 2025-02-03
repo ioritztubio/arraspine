@@ -51,7 +51,8 @@ const bedroomItems = document.querySelectorAll(".bedroom__card");
 bedroomItems.forEach((item) => {
   item.addEventListener("click", () => {
     const bedroomId = item.getAttribute("id");
-    window.location.href = `rooms/${bedroomId}.html`;
+    console.log(bedroomId);
+    window.location.href = `rooms/${bedroomId}.html?id=${bedroomId}`;
   });
 });
 
@@ -94,7 +95,7 @@ window.addEventListener("scroll", scrollUp);
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
+let sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,

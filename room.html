@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habitación</title>
     <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
+
     <link
-    rel="stylesheet"
-    href="assets/css/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
@@ -39,61 +42,141 @@
         </div>
       </nav>
     </header>
-
-    <!--========== ROOM GALLERY ==========-->
-    <section class="section room__gallery">
-      <!-- Slider main container -->
-      <div class="swiper room__swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div
-            class="swiper-slide room__slide"
-            style="background-image: url('assets/img/rooms/h1/room1.webp')"
-          ></div>
-          <div
-            class="swiper-slide room__slide"
-            style="
-              background-image: url('assets/img/rooms/h1/room1_bathroom.webp');
-            "
-          ></div>
-          <div
-            class="swiper-slide room__slide"
-            style="background-image: url('assets/img/rooms/h5/room5_view2.webp'); "
-          ></div>
+    <main>
+      <section class="room__info">
+        <div class="services__title-container">
+          <h2 class="services__title" id="titulo"></h2>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="service__container">
+          <p class="services__title" id="descripcion"></p>
+        </div>
+      </section>
+      <!--========== ROOM GALLERY ==========-->
+      <section class="room__gallery">
+        <!-- Slider main container -->
+        <div class="swiper room__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev room__button-prev"><i class="bx bx-chevron-left"></i></div>
-        <div class="swiper-button-next room__button-next">
-          <i class="bx bx-chevron-right "></i>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev room__button-prev">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+          <div class="swiper-button-next room__button-next">
+            <i class="bx bx-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="room__container__gallery">
+          <div class="room__carousel" id="room__carousel"></div>
+        </div>
+      </section>
+
+      <section class="section services__section">
+        <div class="services__title-container">
+          <h2 class="services__title" id="incluido"></h2>
+        </div>
+        <div class="service__container">
+          <div class="room__grid-container">
+            <div class="service__card">
+              <i class="bx bx-wifi"></i>
+              <div id="wifi"></div>
+            </div>
+
+            <div class="service__card">
+              <i class="bx bx-shower"></i>
+              <div id="bano"></div>
+            </div>
+            <div class="service__card">
+              <i class="bx bx-wind"></i>
+              <div id="aire"></div>
+            </div>
+            <div class="service__card">
+              <i class="bx bx-car"></i>
+              <div class="servece__card" id="parking"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services__section">
+        <div class="services__title-container">
+          <h2 class="services__title" id="extra"></h2>
+        </div>
+        <div class="service__container">
+          <div class="room__grid-container">
+            <div class="service__card">
+              <i class="bx bx-coffee"></i>
+              <div class="servece__card" id="desayuno"></div>
+            </div>
+            <div class="service__card">
+              <i class="bx bxs-washer"></i>
+              <div id="ropa"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button
+        href="https://www.nekatur.net/arraspine"
+        target="_blank"
+        id="contact__reserve-now"
+        class="reserve-button"
+      ></button>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__description-container">
+          <div class="footer__content-description">
+            <a href="#" class="footer__logo">
+              Arraspine <i class="bx bxs-home-alt-2"></i>
+            </a>
+            <p class="footer__description footer__description"></p>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title footer__social-media"></h3>
+
+            <ul class="footer__social">
+              <li>
+                <a
+                  href="https://www.nekatur.net/arraspine"
+                  target="_blank"
+                  class="footer__social-link"
+                >
+                  <img src="assets/img/nekatur_logo.webp" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <h2>Información de la Habitación</h2>
-      <p>
-        Descripción breve de la habitación, incluyendo el tamaño, la capacidad y
-        comodidades principales.
-      </p>
-    </section>
+      <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; 2025 Arraspine. Todos los derechos reservados.
+          <br />Diseñado por
+          <a
+            href="https://www.linkedin.com/in/ioritztubio"
+            target="_blank"
+            class="footer__copy-link"
+            >Ioritz Tubio</a
+          >.
+        </span>
 
-    <section class="section services">
-      <h2>Servicios Incluidos</h2>
-      <div class="service">Wi-Fi Gratis</div>
-      <div class="service">Televisión</div>
-      <div class="service">Baño Privado</div>
-      <div class="service">Aire Acondicionado</div>
-    </section>
-
-    <section class="section extras">
-      <h2>Servicios Extra</h2>
-      <div class="extra">Desayuno (+5€)</div>
-      <div class="extra">Limpieza de Ropa (+10€)</div>
-    </section>
+        <div class="footer__privacy">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </div>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
     <a href="#" class="scroll-up" id="scroll-up">
@@ -103,13 +186,18 @@
     <!--=============== LANGUAGE SELECTOR ===============-->
     <script src="/assets/js/languageSelector.js"></script>
 
-    
     <!--=============== SWIPER JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/roomSwiper.js"></script>
 
+    <!--=============== DINAMIC TEXT ===============-->
+    <script src="assets/js/roomsDinamic.js"></script>
+
+    <!--=============== CAROUSEL ===============-->
+    <script src="assets/js/roomCarousel.js"></script>
     <!--=============== THEME CHANGE ===============-->
     <script src="assets/js/changeTheme.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   </body>
 </html>

@@ -31,6 +31,21 @@ async function loadTranslations() {
 async function translateSections(selectedLanguage) {
   const data = await loadTranslations();
 
+  document.getElementById("contact__reserve-now").innerHTML =
+  data.contact.rnow[selectedLanguage];
+  
+  //Footer section
+  document.querySelectorAll(".footer__description").forEach((element) => {
+    element.innerHTML = data.footer.description[selectedLanguage];
+  });
+
+  document.querySelectorAll(".footer__social-media").forEach((element) => {
+    console.log(element);
+    console.log(data.footer.social[selectedLanguage]);
+    element.innerHTML = data.footer.social[selectedLanguage];
+  });
+
+  console.log("Helllooooo");
   if (window.location.href.includes("room.html")) {
     // Code to execute if the URL contains "room.html"
     return;
@@ -84,28 +99,31 @@ async function translateSections(selectedLanguage) {
 `;
 
       article.addEventListener("click", () => {
-        window.location.href = "room.html";
+        const bedroomId = article.getAttribute("id");
+        console.log(bedroomId);
+        window.location.href = `room.html?id=${bedroomId}`;
       });
       container.appendChild(article);
     });
 
     // Apartment section
-    data.rooms.apartment.forEach((apartment) => {
-      const article = document.createElement("article");
-      article.className = "bedroom__card swiper-slide";
-      article.id = apartment.id;
-
-      article.innerHTML = `
-  <img src="${apartment.img[0]}" alt="${apartment.title[selectedLanguage]}" class="bedroom__img" />
+    const article = document.createElement("article");
+    article.className = "bedroom__card swiper-slide";
+    article.id = "apartment";
+    article.innerHTML = `
+  <img src="${data.rooms.apartment.img[0]}" alt="${data.rooms.apartment.title[selectedLanguage]}" class="bedroom__img" />
   <div class="bedroom__data">
-    <h2 class="bedroom__price">${apartment.price.high_season} <span>€<span></h2>
-    <h3 class="bedroom__title">${apartment.title[selectedLanguage]}</h3>
-    <p class="bedroom__description">${apartment.description[selectedLanguage]}</p>
+    <h2 class="bedroom__price">${data.rooms.apartment.price.high_season} <span>€<span></h2>
+    <h3 class="bedroom__title">${data.rooms.apartment.title[selectedLanguage]}</h3>
+    <p class="bedroom__description">${data.rooms.apartment.description[selectedLanguage]}</p>
   </div>
 `;
 
-      container.appendChild(article);
+    article.addEventListener("click", () => {
+      window.location.href = `room.html?id=${"apartment"}`;
     });
+
+    container.appendChild(article);
 
     //Values section
     document.getElementById("values__title").innerHTML =
@@ -161,13 +179,5 @@ async function translateSections(selectedLanguage) {
       data.contact.chnow[selectedLanguage];
     document.getElementById("contact__reserve").innerHTML =
       data.contact.reserve[selectedLanguage];
-    document.getElementById("contact__reserve-now").innerHTML =
-      data.contact.rnow[selectedLanguage];
-
-    //Footer section
-    document.getElementById("footer__description").innerHTML =
-      data.footer.description[selectedLanguage];
-    document.getElementById("footer__social-media").innerHTML =
-      data.footer.social[selectedLanguage];
   }
 }
