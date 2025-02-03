@@ -59,6 +59,8 @@ async function translateSections(selectedLanguage) {
       data.header.values[selectedLanguage];
     document.getElementById("trans__contact").innerHTML =
       data.header.contact[selectedLanguage];
+    document.getElementById("trans__gallery").innerHTML =
+      data.gallery.title[selectedLanguage];
     document.getElementById("trans__reserve").innerHTML =
       data.header.reserve[selectedLanguage];
 
@@ -194,5 +196,11 @@ async function translateSections(selectedLanguage) {
     " " +
     data.creator[selectedLanguage] +
     "<a href='https://www.linkedin.com/in/ioritztubio' target='_blank'>Ioritz Tubio</a>";
-  // + data.creator[selectedLanguage] +  ;
+
+    //Terms
+    document.getElementById("terms").innerHTML =
+    data.terms[selectedLanguage];
+
+    //Privacy
+    document.getElementById("privacy").innerHTML = data.privacy[selectedLanguage];
 }

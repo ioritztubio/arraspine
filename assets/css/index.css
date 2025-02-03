@@ -1665,7 +1665,8 @@ body.dark-theme {
   }
 
   .nav__lang__theme {
-    margin-inline: 3rem;
+    margin-right: 3rem;
+    margin-left: .5rem;
   }
   .change-theme {
     color: var(--text-color-light);
