@@ -4,6 +4,6 @@
 - Contiene animaciones de scroll.
 - Incluye los dos modos claro y oscuro.
 - Scroll suave para cada sección.
-- Desarrollada con la metodologia Mobile First.
+- Desarrollada con la metodología Mobile First.
 - Compatible con todos los dispositivos.
 
