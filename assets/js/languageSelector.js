@@ -45,7 +45,25 @@ async function translateSections(selectedLanguage) {
     element.innerHTML = data.footer.social[selectedLanguage];
   });
 
-  
+  //Creator
+  document.querySelectorAll(".creator").forEach((element) => {
+    element.innerHTML =
+      "&#169;" +
+      new Date().getFullYear() +
+      " " +
+      data.creator[selectedLanguage] +
+      "<a href='https://www.linkedin.com/in/ioritztubio' target='_blank'>Ioritz Tubio</a>";
+  });
+
+  //Terms
+  document.querySelectorAll(".terms").forEach((element) => {
+    element.innerHTML = data.terms[selectedLanguage];
+  });
+
+  //Privacy
+  document.querySelectorAll(".privacy").forEach((element) => {
+    element.innerHTML = data.privacy[selectedLanguage];
+  });
 
   if (window.location.href.includes("room.html")) {
     // Code to execute if the URL contains "room.html"
@@ -95,7 +113,7 @@ async function translateSections(selectedLanguage) {
       article.innerHTML = `
   <img src="${room.img[0]}" alt="${room.title[selectedLanguage]}" class="bedroom__img" />
   <div class="bedroom__data">
-    <h2 class="bedroom__price">${room.price.high_season} <span>€<span></h2>
+    <h2 class="bedroom__price">${room.price.low_season} <span>€<span></h2>
     <h3 class="bedroom__title">${room.title[selectedLanguage]}</h3>
     <p class="bedroom__description">${room.description[selectedLanguage]}</p>
   </div>
@@ -160,6 +178,24 @@ async function translateSections(selectedLanguage) {
     document.getElementById("value__accordion-description6").innerHTML =
       data.values.accordion[5].description[selectedLanguage];
 
+    //Gallery
+    document.getElementById("gallery__title").innerHTML =
+      data.gallery.title[selectedLanguage];
+    document.getElementById("gallery__description").innerHTML =
+      data.gallery.description[selectedLanguage];
+
+    //Load gallery images
+    const gw = document.querySelector(".gallery__wrapper");
+    const imageFolder = "assets/img/gallery/";
+
+    // Lista de imágenes (tendrás que actualizarla manualmente o generarla dinámicamente en un entorno backend)
+    for (let i = 1; i <= 11; i++) {
+      const imgElement = document.createElement("img");
+      imgElement.src = `${imageFolder}${i}.webp`;
+      imgElement.alt = `Imagen ${i}`;
+      gw.appendChild(imgElement);
+    }
+
     //Contact section
     document.getElementById("contact__title").innerHTML =
       data.contact.title[selectedLanguage];
@@ -183,25 +219,4 @@ async function translateSections(selectedLanguage) {
     document.getElementById("contact__reserve").innerHTML =
       data.contact.reserve[selectedLanguage];
   }
-
-  //Gallery
-  document.getElementById("gallery__title").innerHTML =
-    data.gallery.title[selectedLanguage];
-  document.getElementById("gallery__description").innerHTML =
-    data.gallery.description[selectedLanguage];
-
-  //Creator
-  document.getElementById("creator").innerHTML =
-    "&#169;" +
-    new Date().getFullYear() +
-    " " +
-    data.creator[selectedLanguage] +
-    "<a href='https://www.linkedin.com/in/ioritztubio' target='_blank'>Ioritz Tubio</a>";
-
-    //Terms
-    document.getElementById("terms").innerHTML =
-    data.terms[selectedLanguage];
-
-    //Privacy
-    document.getElementById("privacy").innerHTML = data.privacy[selectedLanguage];
 }

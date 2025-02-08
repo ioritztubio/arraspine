@@ -53,4 +53,5 @@ async function loadContent(language) {
   document.getElementById("desayuno").innerText =
     extraServicesData.desayuno[language];
   document.getElementById("ropa").innerText = extraServicesData.ropa[language];
+
 }

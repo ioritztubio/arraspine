@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -200,6 +200,12 @@ body.dark-theme {
   font-weight: var(--font-medium);
   transition: 0.3s;
   color: #fff;
+  height: 80px;
+  aspect-ratio: 16/9;
+  background-image: url("/assets/img/logo.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nav__logo i {
@@ -208,6 +214,7 @@ body.dark-theme {
 
 .nav__logo:hover {
   color: var(--text-color);
+  filter: brightness(0.8);
 }
 
 .nav__lang__theme {
@@ -1375,6 +1382,10 @@ body.dark-theme {
     padding: 3.5rem 0 1rem;
   }
 
+  .nav__logo{
+    height: 40px;
+  }
+
   .home {
     padding-bottom: 0;
   }
@@ -1428,6 +1439,10 @@ body.dark-theme {
     padding: 1rem 1.5rem;
   }
 
+  .nav__logo{
+    height: 40px;
+  }
+
   .home__value {
     column-gap: 1.5rem;
   }
@@ -1468,11 +1483,19 @@ body.dark-theme {
   .gallery__wrapper {
     columns: 2;
   }
+
+  .nav__logo{
+    height: 60px;
+  }
 }
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .nav__menu {
     width: 342px;
+  }
+
+  .nav__logo{
+    height: 60px;
   }
 
   .footer__container {
@@ -1500,6 +1523,11 @@ body.dark-theme {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2rem;
   }
+
+  .nav__logo{
+    height: 60px;
+  }
+
   .home__orbe {
     align-self: flex-end;
   }
