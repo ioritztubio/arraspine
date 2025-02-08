@@ -107,6 +107,12 @@
           "es": "Aparcamiento gratuito",
           "eu": "Dohako aparkalekua",
           "fr": "Parking gratuit"
+        },
+        "barbacoa": {
+          "en": "Barbecue area",
+          "es": "Zona de barbacoa",
+          "eu": "Barbakoa gunea",
+          "fr": "Espace barbecue"
         }
       },
       {

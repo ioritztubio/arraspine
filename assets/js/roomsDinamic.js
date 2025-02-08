@@ -45,6 +45,7 @@ async function loadContent(language) {
   document.getElementById("aire").innerText =
     servicesData.acondicionado[language];
   document.getElementById("parking").innerText = servicesData.parking[language];
+  document.getElementById("barbacoa").innerText = servicesData.barbacoa[language];
 
   // Servicios extra
   const extraServicesData = data.rooms.services[1];
