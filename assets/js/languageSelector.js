@@ -45,7 +45,8 @@ async function translateSections(selectedLanguage) {
     element.innerHTML = data.footer.social[selectedLanguage];
   });
 
-  console.log("Helllooooo");
+  
+
   if (window.location.href.includes("room.html")) {
     // Code to execute if the URL contains "room.html"
     return;
