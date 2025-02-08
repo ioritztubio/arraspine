@@ -40,8 +40,6 @@ async function translateSections(selectedLanguage) {
   });
 
   document.querySelectorAll(".footer__social-media").forEach((element) => {
-    console.log(element);
-    console.log(data.footer.social[selectedLanguage]);
     element.innerHTML = data.footer.social[selectedLanguage];
   });
 
@@ -121,7 +119,6 @@ async function translateSections(selectedLanguage) {
 
       article.addEventListener("click", () => {
         const bedroomId = article.getAttribute("id");
-        console.log(bedroomId);
         window.location.href = `room.html?id=${bedroomId}`;
       });
       container.appendChild(article);
@@ -188,7 +185,6 @@ async function translateSections(selectedLanguage) {
     const gw = document.querySelector(".gallery__wrapper");
     const imageFolder = "assets/img/gallery/";
 
-    console.log(gw);
     // Lista de imágenes (tendrás que actualizarla manualmente o generarla dinámicamente en un entorno backend)
     for (let i = 1; i <= 11; i++) {
       const imgElement = document.createElement("img");

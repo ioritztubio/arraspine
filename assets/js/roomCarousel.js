@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const roomId = window.location.search.split("id=")[1];
-  console.log(roomId);
   loadRoom(roomId);
 });
 
@@ -17,7 +16,6 @@ let loadApartmentData = async () => {
 };
 
 async function loadRoom(roomId) {
-  console.log(roomId);
 
   let data = [];
   let room = {};
@@ -27,11 +25,9 @@ async function loadRoom(roomId) {
     room = data;
   } else {
     data = await loadRoomData();
-    console.log(data);
     room = data.find((room) => room.id == roomId) || {};
   }
 
-  console.log("room:", room);
   renderRoom(room);
   renderSwiper(room.img); // Llamamos a Swiper para mostrar las imágenes en el slider
 }
@@ -44,7 +40,6 @@ const renderRoom = (roomData) => {
   let thumbnailsHTML = "<ul class='carousel__thumbnails'>";
 
   roomData.img.forEach((imgSrc, index) => {
-    console.log(imgSrc);
     const slideId = `slide-${index + 1}`;
     const checkedAttr = index === 0 ? "checked='checked'" : "";
 

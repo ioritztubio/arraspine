@@ -51,7 +51,6 @@ const bedroomItems = document.querySelectorAll(".bedroom__card");
 bedroomItems.forEach((item) => {
   item.addEventListener("click", () => {
     const bedroomId = item.getAttribute("id");
-    console.log(bedroomId);
     window.location.href = `rooms/${bedroomId}.html?id=${bedroomId}`;
   });
 });
