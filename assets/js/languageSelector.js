@@ -183,14 +183,16 @@ async function translateSections(selectedLanguage) {
 
     //Load gallery images
     const gw = document.querySelector(".gallery__wrapper");
-    const imageFolder = "assets/img/gallery/";
+    if (!gw.hasChildNodes()) {
+      const imageFolder = "assets/img/gallery/";
 
-    // Lista de imágenes (tendrás que actualizarla manualmente o generarla dinámicamente en un entorno backend)
-    for (let i = 1; i <= 11; i++) {
-      const imgElement = document.createElement("img");
-      imgElement.src = `${imageFolder}${i}.webp`;
-      imgElement.alt = `Imagen ${i}`;
-      gw.appendChild(imgElement);
+      // Lista de imágenes (tendrás que actualizarla manualmente o generarla dinámicamente en un entorno backend)
+      for (let i = 1; i <= 11; i++) {
+        const imgElement = document.createElement("img");
+        imgElement.src = `${imageFolder}${i}.webp`;
+        imgElement.alt = `Imagen ${i}`;
+        gw.appendChild(imgElement);
+      }
     }
 
     //Contact section
