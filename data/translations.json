@@ -97,10 +97,10 @@
           "fr": "Salle de bain privée"
         },
         "acondicionado": {
-          "en": "Air conditioning",
-          "es": "Aire acondicionado",
-          "eu": "Aire girotua",
-          "fr": "Climatisation"
+          "en": "Fan",
+          "es": "Ventilador",
+          "eu": "Haizegailua",
+          "fr": "Ventilateur"
         },
         "parking": {
           "en": "Free parking",
@@ -412,7 +412,7 @@
       }
     ]
   },
-  "gallery":{
+  "gallery": {
     "title": {
       "es": "Galería",
       "en": "Gallery",
@@ -496,11 +496,11 @@
       "fr": "Réseaux sociaux"
     }
   },
-  "creator":{
-    "es":  "Arraspine. Todos los derechos reservados. <br />Desarrollado por ",
-    "en":  "Arraspine. All rights reserved. <br />Developed by ",
-    "eu":  "Arraspine. Eskubide guztiak erreserbatuta. <br />Garatzailea: ",
-    "fr":  "Arraspine. Tous droits réservés. <br />Développé par "
+  "creator": {
+    "es": "Arraspine. Todos los derechos reservados. <br />Desarrollado por ",
+    "en": "Arraspine. All rights reserved. <br />Developed by ",
+    "eu": "Arraspine. Eskubide guztiak erreserbatuta. <br />Garatzailea: ",
+    "fr": "Arraspine. Tous droits réservés. <br />Développé par "
   },
   "terms": {
     "es": "Términos y condiciones",
